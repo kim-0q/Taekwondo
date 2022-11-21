@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li{
+  list-style: none;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+nav{
+  width: 100%;
+  position: fixed;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.menu{
+  display: flex;
+}
+
+#menubar {
+  font:bold 14px "malgun gothic";
+  color:rgb(143, 133, 121);
+  line-height: 50px; 
+  text-align: center;
+}
+
+.menuitem{
+  width: 80px;
+  align-items: center;
+  text-align:center;
+  padding: 0 10px;
+  margin: 0 5px;
+  position:relative;
+}
+
+#menubar > ul > li > ul {
+  width:120px;
+  display:none;
+  position: absolute;
+  font-size:13px;
+  background: skyblue;
+  text-align:center;
+  right:-16px;
+}
+
+#menubar > ul > li:last-child > ul {
+  right:-5px;
+}
+
+.menuitem:hover{
+  color: black;
+}
+
+#menubar > ul > li:hover > ul {
+  display:block;
+}
+
+.sidemenu > li:hover {
+  background-color: blanchedalmond;
+  transition: ease-in-out 0.2s;
+  }
