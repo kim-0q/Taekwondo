@@ -17,7 +17,7 @@ a{
 nav{
   width: 100%;
   position: fixed;
-  background-color: aquamarine;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -29,9 +29,13 @@ nav{
 
 #menubar {
   font:bold 14px "malgun gothic";
-  color:rgb(143, 133, 121);
+  color:rgb(255, 255, 255);
   line-height: 50px; 
   text-align: center;
+}
+
+#navbar{
+  padding: 10px;
 }
 
 .menuitem{
@@ -54,10 +58,14 @@ nav{
 }
 
 #menubar > ul > li:last-child > ul {
-  right:-5px;
+  right:-13px;
 }
 
-.menuitem:hover{
+#menubar>ul>li:hover{
+  color: rgb(93, 220, 174);
+}
+
+.sidemenu{
   color: black;
 }
 
@@ -67,5 +75,20 @@ nav{
 
 .sidemenu > li:hover {
   background-color: blanchedalmond;
-  transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.1s;
   }
+
+section{
+  padding: 50px;
+}
+
+#Home{
+  background: url(images/tae1.jpg) center/cover no-repeat;
+  text-align: center;
+  padding: 100px 40px 450px 40px;
+}
+
+#subtitle{
+  font-size: 25px;
+  color: white;
+}
