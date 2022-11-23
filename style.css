@@ -20,7 +20,14 @@ nav{
   background: transparent;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+#navbar__logo{
+  font-size: 20px;
+  margin-left: 20px;
+  color: white;
 }
 
 .menu{
@@ -83,12 +90,41 @@ section{
 }
 
 #Home{
-  background: url(images/tae1.jpg) center/cover no-repeat;
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url(images/taewall.jpg) center/cover no-repeat;
   text-align: center;
-  padding: 100px 40px 450px 40px;
+  padding: 80px 40px 100px 40px;
 }
 
-#subtitle{
-  font-size: 25px;
+#home__title{
   color: white;
+  background: transparent;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  width: fit-content;
+  top: 150px;
+  left: 60px;
 }
+
+#home__subtitle{
+  color: white;
+  font-size: 13px;
+  text-align: left;
+  position: relative;
+  width: 200px;
+  height: 300px;
+  top: 15px;
+  left: 730px;
+  border: 6px solid rgba(196, 196, 196, 0.7);
+
+  /* border-radius: 30px; */
+  background-color: rgba(255,255,192,0.1);
+  backdrop-filter: blur(7px);
+  box-shadow: 2px 7px 15px 8px rgba(0,0,0,0.3);
+}
+
+.home__sub2{
+  padding-top: 40px;
+  padding-left: 15px;
+}
+
