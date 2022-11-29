@@ -16,6 +16,7 @@
     <script>
       var sca = '01';
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
   </head>
   <body>
     <nav id="navbar">
@@ -154,11 +155,24 @@
           <div id="ulsan"><h2>울산광역시: 243</h2></div>
           <div id="jeju"><h2>제주특별자치도: 130</h2></div>
         </div>
-        <div class="reason__desc"></div>
+        <div class="reason__desc">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quam
+          quidem ipsa repellat nostrum reprehenderit nesciunt odio ratione
+          debitis quo itaque exercitationem qui soluta repudiandae fugiat, eius
+          optio. Enim, sequi.
+        </div>
       </div>
-      <div class="reason__container">
-        <div class="reason__graph"></div>
-        <div class="reason__desc"></div>
+      <div class="reason__container line">
+        <div class="reason__subtitle">연도별 전국 태권도장 수</div>
+        <div class="reason__graph">
+          <canvas id="mychart" height="220px"></canvas>
+        </div>
+        <div class="reason__desc">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+          architecto quis earum, nam maiores magni quam. Blanditiis, eligendi,
+          ducimus optio quis porro veritatis maiores ipsum, soluta quos quasi
+          explicabo vel!
+        </div>
       </div>
       <div class="reason__container">
         <div class="reason__graph"></div>
@@ -173,5 +187,6 @@
     <section class="Con" id="Con__Result"></section>
     <section class="Con" id="Con__Ref"></section>
     <footer></footer>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
