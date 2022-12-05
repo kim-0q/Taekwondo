@@ -28,7 +28,7 @@ new Chart(btx, {
     datasets: [
       {
         label: "비율",
-        backgroundColor: ["#40E0D0", "#808080","#808080","#808080","#808080"],
+        backgroundColor: ["#40E0D0", "#a9a9a9","#a9a9a9","#a9a9a9","#a9a9a9"],
         data: [34.1,23.1,14.9,10,4.7]
       }
     ]
@@ -38,6 +38,25 @@ new Chart(btx, {
     title: {
       display: true,
       text: 'Predicted world population (millions) in 2050'
+    }
+  }
+});
+
+new Chart(document.getElementById("pieChart"), {
+  type: 'doughnut',
+  data: {
+    labels: ['성인','아동(유치부~초등부)','청소년(중고등부)'],
+    datasets: [{
+      label: "Population (millions)",
+      backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f"],
+      data: [3.4,86.4,10.2]
+    }]
+  },
+  options: {
+    responsive: false,
+    title: {
+      display: true,
+      text: '제목 왜 안보임'
     }
   }
 });

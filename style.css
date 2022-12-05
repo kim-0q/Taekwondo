@@ -169,7 +169,7 @@ section{
 }
 
 #Intro__Goal{
-  background-color: aquamarine;
+  background-color: rgba(69, 219, 245, 0.683);
 }
 
 #goal__title{
@@ -231,12 +231,12 @@ section{
 }
 
 #canvas{
-  /* border: 1px solid black; */
   display: block;
   width: 350px;
   height: 400px;
   border-radius: 15px;
   background-color: rgb(190, 230, 246);
+  margin-bottom: 10px;
 }
 
 .line> .reason__graph{
@@ -255,7 +255,6 @@ section{
   margin-top: 20%;
   background-color: #fff;
 }
-
 .bar> .reason__graph{
   height: 400px;
   border-radius: 15px;
@@ -263,5 +262,75 @@ section{
   background-color: rgb(190, 230, 246);
 }
 
+.reason__graph{
+  margin-bottom: 10px;
+}
+
 /* 컨테이너 width 320 height 400 */
 
+#Intro__Problem{
+  background-color: rgb(220, 245, 224);
+}
+
+#problem__title{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.problem__container{
+  display: flex;
+  margin-top: 20px;
+  background-color: rgb(201, 253, 195);
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.problem__subtitle{
+  background-color: aquamarine;
+  padding: 10px 0 10px 20px;
+}
+
+.problem__text{
+  padding-top: 20px;
+  background-color: beige;
+  height: 82%;
+  padding-left: 20px;
+}
+
+.problem__text__container{
+  width: 100%;
+}
+
+#pieChart{
+  padding: 10px;
+  background-color: aqua;
+}
+
+#problem__imo{
+  width: 405px;
+  height: 250px;
+  background-color: aqua;
+}
+
+.problem__bg{
+  background: url(images/fox_imo.png) center/75% no-repeat;
+}
+
+.problem__text__container2{
+  width: 100%;
+  text-align: right;
+}
+
+.problem__subtitle2{
+  background-color: aquamarine;
+  padding: 10px 20px 10px 0;
+}
+
+.problem__text{
+  padding-top: 20px;
+  background-color: beige;
+  height: 82%;
+  padding-right: 20px;
+}
