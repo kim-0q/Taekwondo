@@ -60,3 +60,50 @@ new Chart(document.getElementById("pieChart"), {
     }
   }
 });
+
+new Chart(document.getElementById("radar-chart"), {
+  type: 'line',
+  data: {
+    labels: ['외복사근','복직근','기립근','대퇴근막','대퇴사두','전경골근','비복근','대퇴이두'],
+    datasets: [ { 
+      data: [146.68,	136.29,	113.00,	131.96,	146.34,	201.88,	134.93,	162.27],
+      label: "average",
+      borderColor: "#1E90FF",
+      pointStyle: 'line',
+      borderWidth: 2,
+      fill: false
+    },
+      { 
+        data: [189.67,	126.33,	107.43,	116.90,	214.80,	281.20,	114.10,	211.07],
+        label: "1phase",
+        borderColor: "#a9a9a9",
+        pointStyle: 'line',
+        borderWidth: 2,
+        fill: false
+      }, { 
+        data: [117.67,	150.10,	126.87,	131.87,	120.70,	162.87,	157.97,	141.20],
+        label: "2phase",
+        borderColor: "#a9a9a9",
+        pointStyle: 'line',
+        borderWidth: 2,
+        fill: false
+      }, { 
+        data: [132.70,	132.43,	104.70,	147.10,	103.53,	161.57,	132.73,	134.53],
+        label: "3phase",
+        borderColor: "#a9a9a9",
+        pointStyle: 'line',
+        borderWidth: 2,
+        fill: false
+      }
+    ]
+  },
+  options: {
+    responsive:false,
+    plugins: {
+      title: {
+          display: true,
+          text: '뒤차기 동작 시 사용되는 근육 근전도 평균'
+      }
+  },
+  }
+});
