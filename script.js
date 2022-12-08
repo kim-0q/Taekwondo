@@ -107,3 +107,57 @@ new Chart(document.getElementById("radar-chart"), {
   },
   }
 });
+
+new Chart(document.getElementById("mixed-chart"), {
+  type: 'bar',
+  data: {
+      datasets: [{
+          label: '외복사근',
+          data: [132.30, 134.83	, 136.93, 156.57]
+      }, 
+      {
+        label: '복직근',
+        data: [151.50, 197.83, 188.30	,123.03	]
+    }, 
+    {
+      label: '기립근',
+      data: [184.63, 202.47, 130.03	, 172.13	]
+  }, 
+      {
+          label: '대퇴근막',
+          data: [117.60, 138.50, 139.03, 149.07],
+          type: 'line'
+      },
+      {
+        label: '대퇴사두',
+        data: [131.37, 206.43, 167.30, 150.83],
+        type: 'line'
+    },
+    {
+      label: '전경골근',
+      data: [169.03, 102.60, 125.30, 170.47],
+      type: 'line'
+  },
+  {
+    label: '비복근',
+    data: [276.27, 234.83, 138.27, 170.77],
+    type: 'line'
+},
+{
+  label: '대퇴이두',
+  data: [170.30, 148.50, 235.57, 139.37],
+  type: 'line'
+}
+    ],
+      labels: ['1phase', '2phase', '3phase', '4phase']
+  },
+  options: {
+    responsive:false,
+    plugins: {
+      title: {
+          display: true,
+          text: '뒤후리기 동작 시 사용되는 근육 근전도'
+      }
+  },
+  }
+});

@@ -443,8 +443,67 @@ section{
   padding: 10px;
 }
 
+#Body__Muscle__backhook{
+  background-color: burlywood;
+  height: 850px;
+}
+
 #muscle__radar__text{
   text-align: justify;
   padding: 3% 1% 0 0;
   line-height: 25px;
+}
+
+#backhook__title{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 2%;
+}
+
+#backhook__text{
+  width: 70%;
+  text-align: center;
+  padding: 25px;
+  padding-bottom: 45%;
+  background-color: aquamarine;
+  margin: 0 auto;
+  line-height: 35px;
+}
+
+
+#backhook__container{
+  display: inline-block;
+  position: relative;
+  top: -680px;
+  left: 20px;
+}
+
+#backhook__gif{
+  width: 380px;
+  height: 250px;
+  background: url(images/backhookkick.gif) center/cover no-repeat;
+}
+
+#backhook__gif__text{
+  display: inline-block;
+  text-align: center;
+  background-color: beige;
+  line-height: 25px;
+  padding: 15px;
+  width: 380px;
+}
+
+#backhook__graph__container{
+  text-align: justify;
+  display: inline-block;
+  position: relative;
+  width: 600px;
+  top: -500px;
+  left: 150px;
+  background-color: beige;
+}
+
+#backhook__graph__text{
+  padding: 15px;
+  padding-top: 25px;
 }
