@@ -445,7 +445,7 @@ section{
 
 #Body__Muscle__backhook{
   background-color: burlywood;
-  height: 850px;
+  height: 1000px;
 }
 
 #muscle__radar__text{
@@ -470,11 +470,14 @@ section{
   line-height: 35px;
 }
 
+#backhook__total__container{
+  position: relative;
+}
 
 #backhook__container{
   display: inline-block;
-  position: relative;
-  top: -680px;
+  position: absolute;
+  top: 140px;
   left: 20px;
 }
 
@@ -496,14 +499,31 @@ section{
 #backhook__graph__container{
   text-align: justify;
   display: inline-block;
-  position: relative;
-  width: 600px;
-  top: -500px;
-  left: 150px;
+  position: absolute;
+  width: 670px;
+  top: 150px;
+  left: 470px;
   background-color: beige;
 }
 
 #backhook__graph__text{
   padding: 15px;
   padding-top: 25px;
+}
+
+#mixed-chart{
+  padding: 10px;
+}
+
+#kick__con{
+  display: inline-block;
+  width: 85%;
+  position: absolute;
+  text-align: center;
+  background-color: beige;
+  line-height: 30px;
+  padding: 25px;
+  top: 790px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
