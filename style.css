@@ -538,12 +538,54 @@ section{
   margin-bottom: 2%;
 }
 
+#bone__intro
+{
+  background-color: aquamarine;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  line-height: 25px;
+}
+
+#bone__container{
+  display: flex;
+  justify-content: space-between;
+}
+
 #bone-chart{
   width: 500px;
   height: 400px;
 }
 
+.bone__graphs{
+  width: 610px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-row: auto auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
 .bone__graph{
-  width: 300px;
-  height: 200px;
+  display: flex;
+}
+
+.canvasjs-chart-credit{
+  visibility: hidden;
+}
+
+.bone__text{
+  width: 500px;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.bone__text2{
+  width: 610px;
+  text-align: justify;
+  margin-top: 20px;
 }

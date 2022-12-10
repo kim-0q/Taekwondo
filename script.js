@@ -182,7 +182,7 @@ let chart = new CanvasJS.Chart("bone-chart", {
   data: [{
     type: "column",
     name: "골밀도 수치 ",
-    toolTipContent: "{label} <br> <b>{name}:</b> {y}g/cm2",
+    toolTipContent: "<b>{label}</b> <br> <b>{name}:</b> {y}g/cm2",
     dataPoints: [
       { y: 0.35, label: "제어군" },
       { y: 0.48, label: "운동군" }
@@ -214,7 +214,7 @@ let chart1 = new CanvasJS.Chart("grip", {
   data: [{
     type: "column",
     name: "악력 ",
-    toolTipContent: "{label} <br> <b>{name}:</b> {y}kg",
+    toolTipContent: "<b>{label}</b> <br> <b>{name}:</b> {y}kg",
     dataPoints: [
       { y: 38.50, label: "제어군" },
       { y: 48.60, label: "운동군" }
@@ -246,7 +246,7 @@ let chart2 = new CanvasJS.Chart("situp", {
   data: [{
     type: "column",
     name: "개수 ",
-    toolTipContent: "{label} <br> <b>{name}:</b> {y}개",
+    toolTipContent: "<b>{label}</b> <br> <b>{name}:</b> {y}개",
     dataPoints: [
       { y: 28.50, label: "제어군" },
       { y: 42.60, label: "운동군" }
@@ -278,7 +278,7 @@ let chart3 = new CanvasJS.Chart("react", {
   data: [{
     type: "column",
     name: "시간 ",
-    toolTipContent: "{label} <br> <b>{name}:</b> {y}초",
+    toolTipContent: "<b>{label}</b> <br> <b>{name}:</b> {y}초",
     dataPoints: [
       { y: 0.45, label: "제어군" },
       { y: 0.32, label: "운동군" }
@@ -310,7 +310,7 @@ let chart4 = new CanvasJS.Chart("jump", {
   data: [{
     type: "column",
     name: "높이 ",
-    toolTipContent: "{label} <br> <b>{name}:</b> {y}cm",
+    toolTipContent: "<b>{label}</b> <br> <b>{name}:</b> {y}cm",
     dataPoints: [
       { y: 39.90, label: "제어군" },
       { y: 46.80, label: "운동군" }
