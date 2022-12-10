@@ -1,5 +1,8 @@
 const ctx=document.getElementById('mychart');
 const btx=document.getElementById('mybarchart');
+const ptx=document.getElementById("pieChart");
+const rtx=document.getElementById("radar-chart");
+const mtx=document.getElementById("mixed-chart");
 
 new Chart(ctx, {
   type: 'line',
@@ -42,7 +45,7 @@ new Chart(btx, {
   }
 });
 
-new Chart(document.getElementById("pieChart"), {
+new Chart(ptx, {
   type: 'doughnut',
   data: {
     labels: ['성인','아동(유치부~초등부)','청소년(중고등부)'],
@@ -61,7 +64,7 @@ new Chart(document.getElementById("pieChart"), {
   }
 });
 
-new Chart(document.getElementById("radar-chart"), {
+new Chart(rtx, {
   type: 'line',
   data: {
     labels: ['외복사근','복직근','기립근','대퇴근막','대퇴사두','전경골근','비복근','대퇴이두'],
@@ -108,7 +111,7 @@ new Chart(document.getElementById("radar-chart"), {
   }
 });
 
-new Chart(document.getElementById("mixed-chart"), {
+new Chart(mtx, {
   type: 'bar',
   data: {
       datasets: [{
@@ -161,3 +164,166 @@ new Chart(document.getElementById("mixed-chart"), {
   },
   }
 });
+
+let chart = new CanvasJS.Chart("bone-chart", {
+  animationEnabled: true,
+  title:{
+    text: "태권도 수련시 골밀도 수치 비교"
+  },
+  axisX:{
+    title: "집단 분류"
+  },
+  axisY:{
+    title: "수치(g/cm2)"
+  },
+  toolTip: {
+    shared: true
+  },
+  data: [{
+    type: "column",
+    name: "골밀도 수치 ",
+    toolTipContent: "{label} <br> <b>{name}:</b> {y}g/cm2",
+    dataPoints: [
+      { y: 0.35, label: "제어군" },
+      { y: 0.48, label: "운동군" }
+    ]
+  },
+  {
+    type: "error",
+    name: "오차범위 ",
+    toolTipContent: "<b>{name}:</b> {y[0]} - {y[1]}g/cm2",
+    dataPoints: [
+      { y: [0.34, 0.36], label:"제어군" },
+      { y: [0.47, 0.49], label:"운동군" },        
+    ]
+  }]
+});
+chart.render();
+
+let chart1 = new CanvasJS.Chart("grip", {
+  animationEnabled: true,
+  title:{
+    text: "악력"
+  },
+  axisY:{
+    title: "kg"
+  },
+  toolTip: {
+    shared: true
+  },
+  data: [{
+    type: "column",
+    name: "악력 ",
+    toolTipContent: "{label} <br> <b>{name}:</b> {y}kg",
+    dataPoints: [
+      { y: 38.50, label: "제어군" },
+      { y: 48.60, label: "운동군" }
+    ]
+  },
+  {
+    type: "error",
+    name: "오차범위 ",
+    toolTipContent: "<b>{name}:</b> {y[0]} - {y[1]}kg",
+    dataPoints: [
+      { y: [35.40, 41.60], label:"제어군" },
+      { y: [46.30, 50.90], label:"운동군" },        
+    ]
+  }]
+});
+chart1.render();
+
+let chart2 = new CanvasJS.Chart("situp", {
+  animationEnabled: true,
+  title:{
+    text: "싯업 (윗몸일으키기)"
+  },
+  axisY:{
+    title: "개수"
+  },
+  toolTip: {
+    shared: true
+  },
+  data: [{
+    type: "column",
+    name: "개수 ",
+    toolTipContent: "{label} <br> <b>{name}:</b> {y}개",
+    dataPoints: [
+      { y: 28.50, label: "제어군" },
+      { y: 42.60, label: "운동군" }
+    ]
+  },
+  {
+    type: "error",
+    name: "오차범위 ",
+    toolTipContent: "<b>{name}:</b> {y[0]} - {y[1]}개",
+    dataPoints: [
+      { y: [25.06, 31.94], label:"제어군" },
+      { y: [38.85, 46.35], label:"운동군" },        
+    ]
+  }]
+});
+chart2.render();
+
+let chart3 = new CanvasJS.Chart("react", {
+  animationEnabled: true,
+  title:{
+    text: "전신반응"
+  },
+  axisY:{
+    title: "초(sec)"
+  },
+  toolTip: {
+    shared: true
+  },
+  data: [{
+    type: "column",
+    name: "시간 ",
+    toolTipContent: "{label} <br> <b>{name}:</b> {y}초",
+    dataPoints: [
+      { y: 0.45, label: "제어군" },
+      { y: 0.32, label: "운동군" }
+    ]
+  },
+  {
+    type: "error",
+    name: "오차범위 ",
+    toolTipContent: "<b>{name}:</b> {y[0]} - {y[1]}초",
+    dataPoints: [
+      { y: [0.435, 0.465], label:"제어군" },
+      { y: [0.31, 0.33], label:"운동군" },        
+    ]
+  }]
+});
+chart3.render();
+
+let chart4 = new CanvasJS.Chart("jump", {
+  animationEnabled: true,
+  title:{
+    text: "제자리 높이뛰기"
+  },
+  axisY:{
+    title: "높이(cm)"
+  },
+  toolTip: {
+    shared: true
+  },
+  data: [{
+    type: "column",
+    name: "높이 ",
+    toolTipContent: "{label} <br> <b>{name}:</b> {y}cm",
+    dataPoints: [
+      { y: 39.90, label: "제어군" },
+      { y: 46.80, label: "운동군" }
+    ]
+  },
+  {
+    type: "error",
+    name: "오차범위 ",
+    toolTipContent: "<b>{name}:</b> {y[0]} - {y[1]}cm",
+    dataPoints: [
+      { y: [35.05, 44.75], label:"제어군" },
+      { y: [50.90, 42.70], label:"운동군" },        
+    ]
+  }]
+});
+chart4.render();

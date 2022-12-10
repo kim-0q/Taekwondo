@@ -17,6 +17,7 @@
       var sca = '01';
     </script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   </head>
   <body>
     <nav id="navbar">
@@ -332,8 +333,48 @@
         </div>
       </div>
     </section>
-    <section class="Body" id="Body__Bone"></section>
-    <section class="Body" id="Body__Physical"></section>
+    <section class="Body" id="Body__Bone__Physical">
+      <div id="bone__title"><h1>골밀도 & 신체능력</h1></div>
+      <div id="bone__intro">
+        <p>
+          다음으로 태권도가 성인의 골밀도와 신체능력에 미치는 영향에 대해
+          분석하겠다. 25~30대 남자 대학생을 대상으로 1일 2시간, 주 4회, 10년
+          이상 태권도 운동에 참여하는 집단과 그렇지 않은 집단을 비교하여 골밀도
+          수치와 신체능력을 평가했다. 신체능력은 악력, 윗몸일으키기, 전신반응,
+          그리고 제자리 높이뛰기 총 4가지 항목으로 평가했다. 통계적으로 유의한
+          기준을 P<0.05 로 삼았다. 여기서 P는 조건의 차이에 따른 그룹 간 차이가
+          발생한 확률을 의미한다. 즉, P값이 0.05이면 조건의 차이로 그룹 간
+          차이가 발생했을 확률이 95%라는 뜻이 된다.
+        </p>
+      </div>
+      <div id="bone__container">
+        <div class="bone__graph__container">
+          <div id="bone-chart"></div>
+          <div class="bone__text">
+            논문에 제시된 데이터를 바탕으로 골밀도 수치를 비교했다. 비교 결과
+            운동군이 제어군 보다 약 37% 높은 골밀도 수치를 보였으며, P값이 0,001
+            미만으로 태권도 수련이라는 변수가 골밀도 변화에 100%에 수렴하는
+            영향을 끼쳤다고 해석할 수 있다.
+          </div>
+        </div>
+        <div class="bone__graph__container">
+          <div class="bone__graphs">
+            <div class="bone__graph" id="grip"></div>
+            <div class="bone__graph" id="situp"></div>
+            <div class="bone__graph" id="react"></div>
+            <div class="bone__graph" id="jump"></div>
+          </div>
+          <div class="bone__text">
+            이번엔 신체능력을 평가한 데이터를 시각화 해보자. 위와 같이 4개의
+            신체능력 항목 모두 제어군보다 향상된 수치를 보였으며, P값 또한 0에
+            수렴하는 수치를 기록했다. 이는 태권도 운동의 공격과 방어의 빠른
+            전환, 그리고 자세의 변화 중 중심을 유지하기 위해 하체의 힘을
+            사용함으로써 하지의 비복근 및 대퇴근의 발달이 이루어져 제자리 높이
+            뛰기에서 높은 수준을 유지하고 있다고 할 수 있다.
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="Body" id="Body__Blood"></section>
     <section class="Con" id="Con__Result"></section>
     <section class="Con" id="Con__Ref"></section>

@@ -461,7 +461,7 @@ section{
 }
 
 #backhook__text{
-  width: 70%;
+  width: 80%;
   text-align: center;
   padding: 25px;
   padding-bottom: 45%;
@@ -526,4 +526,24 @@ section{
   top: 790px;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#Body__Bone__Physical{
+  background-color: beige;
+}
+
+#bone__title{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 2%;
+}
+
+#bone-chart{
+  width: 500px;
+  height: 400px;
+}
+
+.bone__graph{
+  width: 300px;
+  height: 200px;
 }
