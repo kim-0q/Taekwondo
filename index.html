@@ -383,40 +383,46 @@
       </div>
     </section>
     <section class="Body" id="Body__Construct">
-      <div id="const__title">신체구성 & 폐기능</div>
-      <div id="const__text">
-        다음으로 태권도가 성인의 신체구성, 폐기능, 그리고 혈액성분에 미치는
-        영향을 분석하기 위하여 태권도 경력이 있는 남자 대학생을 대상으로 12주간
-        주 5회 1시간씩 태권도 품새 프로그램을 실시했다. 이때 강도는 여유심박수의
-        50~70% 설정했으며, 통제군은 태권도를 가벼운 정도로 허용하거나 제한했다.
-        해당 논문에 기재된 데이터를 가져왔다. 이때 기준 P값은 모두 0.05 미만으로
-        설정했다. 가져온 데이터 중 신체구성과 관련한 데이터를 추출해 시각화
-        했다. 해당 영역을 단백질, 무기질, 근육량, 체지방율, 그리고 복부지방율 총
-        5개의 종목으로 측정했다.
-      </div>
-      <div id="const__graph1">
-        <div class="const__graph" id="protein"></div>
-        <div id="protein__text">
-          단백질 변화는 보시는 바와 같이 유의한 결과가 나타나지 않았으며, 이는
-          무기질, 근육량 또한 마찬가지이다. 반면 체지방율과 복부지방율에서는
-          유의미한 차이를 보였는데, 두 항목 모두 수치가 감소하는 양상을 보였다.
+      <div id="const__title"><h1>신체구성 & 폐기능</h1></div>
+      <div id="const__container">
+        <div id="const__text">
+          다음으로 태권도가 성인의 신체구성, 폐기능, 그리고 혈액성분에 미치는
+          영향을 분석하기 위하여 태권도 경력이 있는 남자 대학생을 대상으로
+          12주간 주 5회 1시간씩 태권도 품새 프로그램을 실시했다. 이때 강도는
+          여유심박수의 50~70% 설정했으며, 통제군은 태권도를 가벼운 정도로
+          허용하거나 제한했다. 해당 논문에 기재된 데이터를 가져왔다. 이때 기준
+          P값은 모두 0.05 미만으로 설정했다. 가져온 데이터 중 신체구성과 관련한
+          데이터를 추출해 시각화 했다. 해당 영역을 단백질, 무기질, 근육량,
+          체지방율, 그리고 복부지방율 총 5개의 종목으로 측정했다.
         </div>
-        <div class="const__graph" id="chegi"></div>
-        <div class="const__graph" id="bokbu"></div>
-      </div>
-      <div id="const__graph2">
-        <div id="bokbu__text">
-          복부지방율 항목은 오차범위가 다소 커 수치가 눌리는 현상이 발생했다.
-          따라서 오차범위를 제거해 수치로 비교해 보겠다.
+        <div id="const__graph1">
+          <div class="const__graph" id="protein"></div>
+          <div id="protein__text">
+            단백질 변화는 보는 바와 같이 유의한 결과가 나타나지 않았으며, 이는
+            무기질, 근육량 또한 마찬가지이다. 반면 체지방율과 복부지방율에서는
+            유의미한 차이를 보였는데, 두 항목 모두 수치가 감소하는 양상을
+            보였다.
+          </div>
+          <div class="const__graph" id="chegi"></div>
         </div>
-        <div class="const__graph" id="bokbu2"></div>
-        <div id="const__line1"></div>
-        <div id="const__line2"></div>
+        <div id="const__graph2">
+          <div class="const__graph" id="bokbu"></div>
+          <div id="bokbu__text">
+            복부지방율 항목은 오차범위가 다소 커 수치가 눌리는 현상이 발생했다.
+            따라서 오차범위를 제거해 수치로 비교해 보겠다.
+          </div>
+          <div class="const__graph" id="bokbu2"></div>
+          <!-- 확대 효과용 막대 -->
+          <div id="const__line1"></div>
+          <div id="const__line2"></div>
+        </div>
       </div>
       <div id="lung__intro">
-        다음으로 폐기능의 변화를 살펴보겠다. 총 4개의 항목으로 체크했으며, 관련
-        용어는 다음과 같다.
-        <ul>
+        <p id="lung__intro__intro">
+          다음으로 폐기능의 변화를 살펴보겠다. 총 4개의 항목으로 체크했으며,
+          관련 용어는 다음과 같다.
+        </p>
+        <ul id="lung__category">
           <li>
             FVC (forced vital capacity, 노력성 폐활량) : 최대로 숨을 들이쉰
             다음, 최대 노력으로 끝까지 내쉬었을 때 공기량
@@ -436,10 +442,14 @@
         </ul>
       </div>
       <div id="lung__graph__container">
-        <div class="lung__graph" id="fvc"></div>
-        <div class="lung__graph" id="vc"></div>
-        <div class="lung__graph" id="erv"></div>
-        <div class="lung__graph" id="mvv"></div>
+        <div class="lung__graphcon" id="lung__graph__container1">
+          <div class="lung__graph" id="fvc"></div>
+          <div class="lung__graph" id="vc"></div>
+        </div>
+        <div class="lung__graphcon" id="lung__graph__container2">
+          <div class="lung__graph" id="erv"></div>
+          <div class="lung__graph" id="mvv"></div>
+        </div>
       </div>
       <div id="lung__text">
         MVV(최대노력환기량)를 제외한 나머지 항목에서 모두 향상된 결과를

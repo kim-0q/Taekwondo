@@ -327,3 +327,459 @@ let chart4 = new CanvasJS.Chart("jump", {
   }]
 });
 chart4.render();
+
+let chart5 = new CanvasJS.Chart("protein", {
+	animationEnabled: true,
+	title:{
+		text: "Predicted Rainfall - 2017"
+	},
+	axisX: {
+		interval: 1
+	},
+	axisY:{
+		title: "Precipitation (in inch)",
+		suffix: " in"
+	},
+	toolTip: {
+		shared: true
+	},
+	data: [{
+		type: "line",
+			name: "Predicted",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} in",
+			markerType: "none",
+			dataPoints: [
+				{ y: 3.69, label: "Jan" },
+				{ y: 3.06, label: "Feb" },
+				{ y: 4.08, label: "Mar" },
+				{ y: 4.06, label: "Apr" },
+				{ y: 4.48, label: "May" },
+				{ y: 3.45, label: "Jun" },
+				{ y: 4.17, label: "Jul" },
+				{ y: 4.05, label: "Aug" },
+				{ y: 4.05, label: "Sep" },
+				{ y: 3.5, label: "Oct" },
+				{ y: 4.0, label: "Nov" },
+				{ y: 3.86, label: "Dec" }
+			]
+		},
+		{
+			type: "error",
+			name: "Error Range",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} in - {y[1]} in",
+			dataPoints: [
+				{ y: [3.6, 3.8], label: "Jan" },
+				{ y: [3.0, 3.4], label: "Feb" },
+				{ y: [3.8, 4.3], label: "Mar" },
+				{ y: [3.9, 4.2], label: "Apr" },
+				{ y: [4.3, 4.6], label: "May" },
+				{ y: [3.3, 3.6], label: "Jun" },
+				{ y: [4.0, 4.4], label: "Jul" },
+				{ y: [3.9, 4.3], label: "Aug" },
+				{ y: [3.8, 4.2], label: "Sep" },
+				{ y: [3.4, 3.7], label: "Oct" },
+				{ y: [3.8, 4.2], label: "Nov" },
+				{ y: [3.7, 4.0], label: "Dec" }
+			]
+	}]
+});
+chart5.render();
+
+let chart6 = new CanvasJS.Chart("chegi", {
+	animationEnabled: true,
+	title:{
+		text: "Predicted Rainfall - 2017"
+	},
+	axisX: {
+		interval: 1
+	},
+	axisY:{
+		title: "Precipitation (in inch)",
+		suffix: " in"
+	},
+	toolTip: {
+		shared: true
+	},
+	data: [{
+		type: "line",
+			name: "Predicted",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} in",
+			markerType: "none",
+			dataPoints: [
+				{ y: 3.69, label: "Jan" },
+				{ y: 3.06, label: "Feb" },
+				{ y: 4.08, label: "Mar" },
+				{ y: 4.06, label: "Apr" },
+				{ y: 4.48, label: "May" },
+				{ y: 3.45, label: "Jun" },
+				{ y: 4.17, label: "Jul" },
+				{ y: 4.05, label: "Aug" },
+				{ y: 4.05, label: "Sep" },
+				{ y: 3.5, label: "Oct" },
+				{ y: 4.0, label: "Nov" },
+				{ y: 3.86, label: "Dec" }
+			]
+		},
+		{
+			type: "error",
+			name: "Error Range",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} in - {y[1]} in",
+			dataPoints: [
+				{ y: [3.6, 3.8], label: "Jan" },
+				{ y: [3.0, 3.4], label: "Feb" },
+				{ y: [3.8, 4.3], label: "Mar" },
+				{ y: [3.9, 4.2], label: "Apr" },
+				{ y: [4.3, 4.6], label: "May" },
+				{ y: [3.3, 3.6], label: "Jun" },
+				{ y: [4.0, 4.4], label: "Jul" },
+				{ y: [3.9, 4.3], label: "Aug" },
+				{ y: [3.8, 4.2], label: "Sep" },
+				{ y: [3.4, 3.7], label: "Oct" },
+				{ y: [3.8, 4.2], label: "Nov" },
+				{ y: [3.7, 4.0], label: "Dec" }
+			]
+	}]
+});
+chart6.render();
+
+let chart7 = new CanvasJS.Chart("bokbu", {
+	animationEnabled: true,
+	title:{
+		text: "Predicted Rainfall - 2017"
+	},
+	axisX: {
+		interval: 1
+	},
+	axisY:{
+		title: "Precipitation (in inch)",
+		suffix: " in"
+	},
+	toolTip: {
+		shared: true
+	},
+	data: [{
+		type: "line",
+			name: "Predicted",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} in",
+			markerType: "none",
+			dataPoints: [
+				{ y: 3.69, label: "Jan" },
+				{ y: 3.06, label: "Feb" },
+				{ y: 4.08, label: "Mar" },
+				{ y: 4.06, label: "Apr" },
+				{ y: 4.48, label: "May" },
+				{ y: 3.45, label: "Jun" },
+				{ y: 4.17, label: "Jul" },
+				{ y: 4.05, label: "Aug" },
+				{ y: 4.05, label: "Sep" },
+				{ y: 3.5, label: "Oct" },
+				{ y: 4.0, label: "Nov" },
+				{ y: 3.86, label: "Dec" }
+			]
+		},
+		{
+			type: "error",
+			name: "Error Range",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} in - {y[1]} in",
+			dataPoints: [
+				{ y: [3.6, 3.8], label: "Jan" },
+				{ y: [3.0, 3.4], label: "Feb" },
+				{ y: [3.8, 4.3], label: "Mar" },
+				{ y: [3.9, 4.2], label: "Apr" },
+				{ y: [4.3, 4.6], label: "May" },
+				{ y: [3.3, 3.6], label: "Jun" },
+				{ y: [4.0, 4.4], label: "Jul" },
+				{ y: [3.9, 4.3], label: "Aug" },
+				{ y: [3.8, 4.2], label: "Sep" },
+				{ y: [3.4, 3.7], label: "Oct" },
+				{ y: [3.8, 4.2], label: "Nov" },
+				{ y: [3.7, 4.0], label: "Dec" }
+			]
+	}]
+});
+chart7.render();
+
+let chart8 = new CanvasJS.Chart("bokbu2", {
+	animationEnabled: true,
+	title:{
+		text: "Predicted Rainfall - 2017"
+	},
+	axisX: {
+		interval: 1
+	},
+	axisY:{
+		title: "Precipitation (in inch)",
+		suffix: " in"
+	},
+	toolTip: {
+		shared: true
+	},
+	data: [{
+		type: "line",
+			name: "Predicted",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} in",
+			markerType: "none",
+			dataPoints: [
+				{ y: 3.69, label: "Jan" },
+				{ y: 3.06, label: "Feb" },
+				{ y: 4.08, label: "Mar" },
+				{ y: 4.06, label: "Apr" },
+				{ y: 4.48, label: "May" },
+				{ y: 3.45, label: "Jun" },
+				{ y: 4.17, label: "Jul" },
+				{ y: 4.05, label: "Aug" },
+				{ y: 4.05, label: "Sep" },
+				{ y: 3.5, label: "Oct" },
+				{ y: 4.0, label: "Nov" },
+				{ y: 3.86, label: "Dec" }
+			]
+		},
+		{
+			type: "error",
+			name: "Error Range",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} in - {y[1]} in",
+			dataPoints: [
+				{ y: [3.6, 3.8], label: "Jan" },
+				{ y: [3.0, 3.4], label: "Feb" },
+				{ y: [3.8, 4.3], label: "Mar" },
+				{ y: [3.9, 4.2], label: "Apr" },
+				{ y: [4.3, 4.6], label: "May" },
+				{ y: [3.3, 3.6], label: "Jun" },
+				{ y: [4.0, 4.4], label: "Jul" },
+				{ y: [3.9, 4.3], label: "Aug" },
+				{ y: [3.8, 4.2], label: "Sep" },
+				{ y: [3.4, 3.7], label: "Oct" },
+				{ y: [3.8, 4.2], label: "Nov" },
+				{ y: [3.7, 4.0], label: "Dec" }
+			]
+	}]
+});
+chart8.render();
+
+let chart9 = new CanvasJS.Chart("fvc", {
+	animationEnabled: true,
+	title:{
+		text: "Predicted Rainfall - 2017"
+	},
+	axisX: {
+		interval: 1
+	},
+	axisY:{
+		title: "Precipitation (in inch)",
+		suffix: " in"
+	},
+	toolTip: {
+		shared: true
+	},
+	data: [{
+		type: "line",
+			name: "Predicted",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} in",
+			markerType: "none",
+			dataPoints: [
+				{ y: 3.69, label: "Jan" },
+				{ y: 3.06, label: "Feb" },
+				{ y: 4.08, label: "Mar" },
+				{ y: 4.06, label: "Apr" },
+				{ y: 4.48, label: "May" },
+				{ y: 3.45, label: "Jun" },
+				{ y: 4.17, label: "Jul" },
+				{ y: 4.05, label: "Aug" },
+				{ y: 4.05, label: "Sep" },
+				{ y: 3.5, label: "Oct" },
+				{ y: 4.0, label: "Nov" },
+				{ y: 3.86, label: "Dec" }
+			]
+		},
+		{
+			type: "error",
+			name: "Error Range",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} in - {y[1]} in",
+			dataPoints: [
+				{ y: [3.6, 3.8], label: "Jan" },
+				{ y: [3.0, 3.4], label: "Feb" },
+				{ y: [3.8, 4.3], label: "Mar" },
+				{ y: [3.9, 4.2], label: "Apr" },
+				{ y: [4.3, 4.6], label: "May" },
+				{ y: [3.3, 3.6], label: "Jun" },
+				{ y: [4.0, 4.4], label: "Jul" },
+				{ y: [3.9, 4.3], label: "Aug" },
+				{ y: [3.8, 4.2], label: "Sep" },
+				{ y: [3.4, 3.7], label: "Oct" },
+				{ y: [3.8, 4.2], label: "Nov" },
+				{ y: [3.7, 4.0], label: "Dec" }
+			]
+	}]
+});
+chart9.render();
+
+let chart10 = new CanvasJS.Chart("vc", {
+	animationEnabled: true,
+	title:{
+		text: "Predicted Rainfall - 2017"
+	},
+	axisX: {
+		interval: 1
+	},
+	axisY:{
+		title: "Precipitation (in inch)",
+		suffix: " in"
+	},
+	toolTip: {
+		shared: true
+	},
+	data: [{
+		type: "line",
+			name: "Predicted",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} in",
+			markerType: "none",
+			dataPoints: [
+				{ y: 3.69, label: "Jan" },
+				{ y: 3.06, label: "Feb" },
+				{ y: 4.08, label: "Mar" },
+				{ y: 4.06, label: "Apr" },
+				{ y: 4.48, label: "May" },
+				{ y: 3.45, label: "Jun" },
+				{ y: 4.17, label: "Jul" },
+				{ y: 4.05, label: "Aug" },
+				{ y: 4.05, label: "Sep" },
+				{ y: 3.5, label: "Oct" },
+				{ y: 4.0, label: "Nov" },
+				{ y: 3.86, label: "Dec" }
+			]
+		},
+		{
+			type: "error",
+			name: "Error Range",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} in - {y[1]} in",
+			dataPoints: [
+				{ y: [3.6, 3.8], label: "Jan" },
+				{ y: [3.0, 3.4], label: "Feb" },
+				{ y: [3.8, 4.3], label: "Mar" },
+				{ y: [3.9, 4.2], label: "Apr" },
+				{ y: [4.3, 4.6], label: "May" },
+				{ y: [3.3, 3.6], label: "Jun" },
+				{ y: [4.0, 4.4], label: "Jul" },
+				{ y: [3.9, 4.3], label: "Aug" },
+				{ y: [3.8, 4.2], label: "Sep" },
+				{ y: [3.4, 3.7], label: "Oct" },
+				{ y: [3.8, 4.2], label: "Nov" },
+				{ y: [3.7, 4.0], label: "Dec" }
+			]
+	}]
+});
+chart10.render();
+
+let chart11 = new CanvasJS.Chart("erv", {
+	animationEnabled: true,
+	title:{
+		text: "Predicted Rainfall - 2017"
+	},
+	axisX: {
+		interval: 1
+	},
+	axisY:{
+		title: "Precipitation (in inch)",
+		suffix: " in"
+	},
+	toolTip: {
+		shared: true
+	},
+	data: [{
+		type: "line",
+			name: "Predicted",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} in",
+			markerType: "none",
+			dataPoints: [
+				{ y: 3.69, label: "Jan" },
+				{ y: 3.06, label: "Feb" },
+				{ y: 4.08, label: "Mar" },
+				{ y: 4.06, label: "Apr" },
+				{ y: 4.48, label: "May" },
+				{ y: 3.45, label: "Jun" },
+				{ y: 4.17, label: "Jul" },
+				{ y: 4.05, label: "Aug" },
+				{ y: 4.05, label: "Sep" },
+				{ y: 3.5, label: "Oct" },
+				{ y: 4.0, label: "Nov" },
+				{ y: 3.86, label: "Dec" }
+			]
+		},
+		{
+			type: "error",
+			name: "Error Range",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} in - {y[1]} in",
+			dataPoints: [
+				{ y: [3.6, 3.8], label: "Jan" },
+				{ y: [3.0, 3.4], label: "Feb" },
+				{ y: [3.8, 4.3], label: "Mar" },
+				{ y: [3.9, 4.2], label: "Apr" },
+				{ y: [4.3, 4.6], label: "May" },
+				{ y: [3.3, 3.6], label: "Jun" },
+				{ y: [4.0, 4.4], label: "Jul" },
+				{ y: [3.9, 4.3], label: "Aug" },
+				{ y: [3.8, 4.2], label: "Sep" },
+				{ y: [3.4, 3.7], label: "Oct" },
+				{ y: [3.8, 4.2], label: "Nov" },
+				{ y: [3.7, 4.0], label: "Dec" }
+			]
+	}]
+});
+chart11.render();
+
+let chart12 = new CanvasJS.Chart("mvv", {
+	animationEnabled: true,
+	title:{
+		text: "Predicted Rainfall - 2017"
+	},
+	axisX: {
+		interval: 1
+	},
+	axisY:{
+		title: "Precipitation (in inch)",
+		suffix: " in"
+	},
+	toolTip: {
+		shared: true
+	},
+	data: [{
+		type: "line",
+			name: "Predicted",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} in",
+			markerType: "none",
+			dataPoints: [
+				{ y: 3.69, label: "Jan" },
+				{ y: 3.06, label: "Feb" },
+				{ y: 4.08, label: "Mar" },
+				{ y: 4.06, label: "Apr" },
+				{ y: 4.48, label: "May" },
+				{ y: 3.45, label: "Jun" },
+				{ y: 4.17, label: "Jul" },
+				{ y: 4.05, label: "Aug" },
+				{ y: 4.05, label: "Sep" },
+				{ y: 3.5, label: "Oct" },
+				{ y: 4.0, label: "Nov" },
+				{ y: 3.86, label: "Dec" }
+			]
+		},
+		{
+			type: "error",
+			name: "Error Range",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} in - {y[1]} in",
+			dataPoints: [
+				{ y: [3.6, 3.8], label: "Jan" },
+				{ y: [3.0, 3.4], label: "Feb" },
+				{ y: [3.8, 4.3], label: "Mar" },
+				{ y: [3.9, 4.2], label: "Apr" },
+				{ y: [4.3, 4.6], label: "May" },
+				{ y: [3.3, 3.6], label: "Jun" },
+				{ y: [4.0, 4.4], label: "Jul" },
+				{ y: [3.9, 4.3], label: "Aug" },
+				{ y: [3.8, 4.2], label: "Sep" },
+				{ y: [3.4, 3.7], label: "Oct" },
+				{ y: [3.8, 4.2], label: "Nov" },
+				{ y: [3.7, 4.0], label: "Dec" }
+			]
+	}]
+});
+chart12.render();
