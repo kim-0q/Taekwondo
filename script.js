@@ -328,58 +328,58 @@ let chart4 = new CanvasJS.Chart("jump", {
 });
 chart4.render();
 
+// 신체구성 그래프
 let chart5 = new CanvasJS.Chart("protein", {
 	animationEnabled: true,
 	title:{
-		text: "Predicted Rainfall - 2017"
+		text: "태권도 수련 시 단백질 변화"
 	},
 	axisX: {
 		interval: 1
 	},
 	axisY:{
-		title: "Precipitation (in inch)",
-		suffix: " in"
+		title: "단백질(kg)",
+		suffix: " kg"
 	},
 	toolTip: {
 		shared: true
 	},
 	data: [{
 		type: "line",
-			name: "Predicted",
-			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} in",
+			name: "실험군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} kg",
 			markerType: "none",
 			dataPoints: [
-				{ y: 3.69, label: "Jan" },
-				{ y: 3.06, label: "Feb" },
-				{ y: 4.08, label: "Mar" },
-				{ y: 4.06, label: "Apr" },
-				{ y: 4.48, label: "May" },
-				{ y: 3.45, label: "Jun" },
-				{ y: 4.17, label: "Jul" },
-				{ y: 4.05, label: "Aug" },
-				{ y: 4.05, label: "Sep" },
-				{ y: 3.5, label: "Oct" },
-				{ y: 4.0, label: "Nov" },
-				{ y: 3.86, label: "Dec" }
+				{ y: 13.87, label: "실험 전" },
+				{ y: 15.35, label: "실험 후" }
 			]
 		},
 		{
 			type: "error",
-			name: "Error Range",
-			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} in - {y[1]} in",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} kg - {y[1]} kg",
 			dataPoints: [
-				{ y: [3.6, 3.8], label: "Jan" },
-				{ y: [3.0, 3.4], label: "Feb" },
-				{ y: [3.8, 4.3], label: "Mar" },
-				{ y: [3.9, 4.2], label: "Apr" },
-				{ y: [4.3, 4.6], label: "May" },
-				{ y: [3.3, 3.6], label: "Jun" },
-				{ y: [4.0, 4.4], label: "Jul" },
-				{ y: [3.9, 4.3], label: "Aug" },
-				{ y: [3.8, 4.2], label: "Sep" },
-				{ y: [3.4, 3.7], label: "Oct" },
-				{ y: [3.8, 4.2], label: "Nov" },
-				{ y: [3.7, 4.0], label: "Dec" }
+				{ y: [13.48, 14.26], label: "실험 전" },
+				{ y: [15.07, 15.63], label: "실험 후" }
+			]
+	},
+  {
+		type: "line",
+			name: "통제군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} kg",
+			markerType: "none",
+			dataPoints: [
+				{ y: 14.70, label: "실험 전" },
+				{ y: 14.96, label: "실험 후" }
+			]
+		},
+		{
+			type: "error",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} kg - {y[1]} kg",
+			dataPoints: [
+				{ y: [13.86, 15.54], label: "실험 전" },
+				{ y: [14.255, 15.665], label: "실험 후" }
 			]
 	}]
 });
@@ -388,55 +388,54 @@ chart5.render();
 let chart6 = new CanvasJS.Chart("chegi", {
 	animationEnabled: true,
 	title:{
-		text: "Predicted Rainfall - 2017"
+		text: "체지방율 변화"
 	},
 	axisX: {
 		interval: 1
 	},
 	axisY:{
-		title: "Precipitation (in inch)",
-		suffix: " in"
+		title: "체지방율(%)",
+		suffix: " %"
 	},
 	toolTip: {
 		shared: true
 	},
 	data: [{
 		type: "line",
-			name: "Predicted",
-			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} in",
+			name: "실험군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} %",
 			markerType: "none",
 			dataPoints: [
-				{ y: 3.69, label: "Jan" },
-				{ y: 3.06, label: "Feb" },
-				{ y: 4.08, label: "Mar" },
-				{ y: 4.06, label: "Apr" },
-				{ y: 4.48, label: "May" },
-				{ y: 3.45, label: "Jun" },
-				{ y: 4.17, label: "Jul" },
-				{ y: 4.05, label: "Aug" },
-				{ y: 4.05, label: "Sep" },
-				{ y: 3.5, label: "Oct" },
-				{ y: 4.0, label: "Nov" },
-				{ y: 3.86, label: "Dec" }
+				{ y: 18.20, label: "실험 전" },
+				{ y: 13.62, label: "실험 후" }
 			]
 		},
 		{
 			type: "error",
-			name: "Error Range",
-			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} in - {y[1]} in",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} % - {y[1]} %",
 			dataPoints: [
-				{ y: [3.6, 3.8], label: "Jan" },
-				{ y: [3.0, 3.4], label: "Feb" },
-				{ y: [3.8, 4.3], label: "Mar" },
-				{ y: [3.9, 4.2], label: "Apr" },
-				{ y: [4.3, 4.6], label: "May" },
-				{ y: [3.3, 3.6], label: "Jun" },
-				{ y: [4.0, 4.4], label: "Jul" },
-				{ y: [3.9, 4.3], label: "Aug" },
-				{ y: [3.8, 4.2], label: "Sep" },
-				{ y: [3.4, 3.7], label: "Oct" },
-				{ y: [3.8, 4.2], label: "Nov" },
-				{ y: [3.7, 4.0], label: "Dec" }
+				{ y: [18.20-2.10/2, 18.20+2.10/2], label: "실험 전" },
+				{ y: [13.62-2.51/2, 13.62+2.51/2], label: "실험 후" }
+			]
+	},
+  {
+		type: "line",
+			name: "통제군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} %",
+			markerType: "none",
+			dataPoints: [
+				{ y: 14.70, label: "실험 전" },
+				{ y: 14.96, label: "실험 후" }
+			]
+		},
+		{
+			type: "error",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} % - {y[1]} %",
+			dataPoints: [
+				{ y: [13.86, 15.54], label: "실험 전" },
+				{ y: [14.255, 15.665], label: "실험 후" }
 			]
 	}]
 });
@@ -445,55 +444,54 @@ chart6.render();
 let chart7 = new CanvasJS.Chart("bokbu", {
 	animationEnabled: true,
 	title:{
-		text: "Predicted Rainfall - 2017"
+		text: "복부지방율 변화"
 	},
 	axisX: {
 		interval: 1
 	},
 	axisY:{
-		title: "Precipitation (in inch)",
-		suffix: " in"
+		title: "복부지방율(%)",
+		suffix: " %"
 	},
 	toolTip: {
 		shared: true
 	},
 	data: [{
 		type: "line",
-			name: "Predicted",
-			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} in",
+			name: "실험군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} %",
 			markerType: "none",
 			dataPoints: [
-				{ y: 3.69, label: "Jan" },
-				{ y: 3.06, label: "Feb" },
-				{ y: 4.08, label: "Mar" },
-				{ y: 4.06, label: "Apr" },
-				{ y: 4.48, label: "May" },
-				{ y: 3.45, label: "Jun" },
-				{ y: 4.17, label: "Jul" },
-				{ y: 4.05, label: "Aug" },
-				{ y: 4.05, label: "Sep" },
-				{ y: 3.5, label: "Oct" },
-				{ y: 4.0, label: "Nov" },
-				{ y: 3.86, label: "Dec" }
+				{ y: 0.86, label: "실험 전" },
+				{ y: 0.78, label: "실험 후" }
 			]
 		},
 		{
 			type: "error",
-			name: "Error Range",
-			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} in - {y[1]} in",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} % - {y[1]} %",
 			dataPoints: [
-				{ y: [3.6, 3.8], label: "Jan" },
-				{ y: [3.0, 3.4], label: "Feb" },
-				{ y: [3.8, 4.3], label: "Mar" },
-				{ y: [3.9, 4.2], label: "Apr" },
-				{ y: [4.3, 4.6], label: "May" },
-				{ y: [3.3, 3.6], label: "Jun" },
-				{ y: [4.0, 4.4], label: "Jul" },
-				{ y: [3.9, 4.3], label: "Aug" },
-				{ y: [3.8, 4.2], label: "Sep" },
-				{ y: [3.4, 3.7], label: "Oct" },
-				{ y: [3.8, 4.2], label: "Nov" },
-				{ y: [3.7, 4.0], label: "Dec" }
+				{ y: [0.86-0.04	/2, 0.86+0.04/2], label: "실험 전" },
+				{ y: [0.78-0.01/2, 0.78+0.01/2], label: "실험 후" }
+			]
+	},
+  {
+		type: "line",
+			name: "통제군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} %",
+			markerType: "none",
+			dataPoints: [
+				{ y: 0.84, label: "실험 전" },
+				{ y: 0.82, label: "실험 후" }
+			]
+		},
+		{
+			type: "error",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} % - {y[1]} %",
+			dataPoints: [
+				{ y: [0.84-0.38/2, 0.84+0.38/2], label: "실험 전" },
+				{ y: [0.82-0.34/2, 0.82+0.34/2], label: "실험 후" }
 			]
 	}]
 });
@@ -502,57 +500,38 @@ chart7.render();
 let chart8 = new CanvasJS.Chart("bokbu2", {
 	animationEnabled: true,
 	title:{
-		text: "Predicted Rainfall - 2017"
+		text: "복부지방율 변화 (오차범위 제거)"
 	},
 	axisX: {
 		interval: 1
 	},
 	axisY:{
-		title: "Precipitation (in inch)",
-		suffix: " in"
+		title: "복부지방율(%)",
+		suffix: " %"
 	},
 	toolTip: {
 		shared: true
 	},
 	data: [{
 		type: "line",
-			name: "Predicted",
-			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} in",
+			name: "실험군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} %",
 			markerType: "none",
 			dataPoints: [
-				{ y: 3.69, label: "Jan" },
-				{ y: 3.06, label: "Feb" },
-				{ y: 4.08, label: "Mar" },
-				{ y: 4.06, label: "Apr" },
-				{ y: 4.48, label: "May" },
-				{ y: 3.45, label: "Jun" },
-				{ y: 4.17, label: "Jul" },
-				{ y: 4.05, label: "Aug" },
-				{ y: 4.05, label: "Sep" },
-				{ y: 3.5, label: "Oct" },
-				{ y: 4.0, label: "Nov" },
-				{ y: 3.86, label: "Dec" }
+				{ y: 0.86, label: "실험 전" },
+				{ y: 0.78, label: "실험 후" }
 			]
 		},
-		{
-			type: "error",
-			name: "Error Range",
-			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} in - {y[1]} in",
+  {
+		type: "line",
+			name: "통제군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} %",
+			markerType: "none",
 			dataPoints: [
-				{ y: [3.6, 3.8], label: "Jan" },
-				{ y: [3.0, 3.4], label: "Feb" },
-				{ y: [3.8, 4.3], label: "Mar" },
-				{ y: [3.9, 4.2], label: "Apr" },
-				{ y: [4.3, 4.6], label: "May" },
-				{ y: [3.3, 3.6], label: "Jun" },
-				{ y: [4.0, 4.4], label: "Jul" },
-				{ y: [3.9, 4.3], label: "Aug" },
-				{ y: [3.8, 4.2], label: "Sep" },
-				{ y: [3.4, 3.7], label: "Oct" },
-				{ y: [3.8, 4.2], label: "Nov" },
-				{ y: [3.7, 4.0], label: "Dec" }
+				{ y: 0.84, label: "실험 전" },
+				{ y: 0.82, label: "실험 후" }
 			]
-	}]
+		}]
 });
 chart8.render();
 
@@ -560,55 +539,54 @@ chart8.render();
 let chart9 = new CanvasJS.Chart("fvc", {
 	animationEnabled: true,
 	title:{
-		text: "Predicted Rainfall - 2017"
+		text: "FVC (노력성 폐활량)"
 	},
 	axisX: {
 		interval: 1
 	},
 	axisY:{
-		title: "Precipitation (in inch)",
-		suffix: " in"
+		title: "수치(L)",
+		suffix: " L"
 	},
 	toolTip: {
 		shared: true
 	},
 	data: [{
 		type: "line",
-			name: "Predicted",
-			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} in",
+			name: "실험군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} L",
 			markerType: "none",
 			dataPoints: [
-				{ y: 3.69, label: "Jan" },
-				{ y: 3.06, label: "Feb" },
-				{ y: 4.08, label: "Mar" },
-				{ y: 4.06, label: "Apr" },
-				{ y: 4.48, label: "May" },
-				{ y: 3.45, label: "Jun" },
-				{ y: 4.17, label: "Jul" },
-				{ y: 4.05, label: "Aug" },
-				{ y: 4.05, label: "Sep" },
-				{ y: 3.5, label: "Oct" },
-				{ y: 4.0, label: "Nov" },
-				{ y: 3.86, label: "Dec" }
+				{ y: 4.84, label: "실험 전" },
+				{ y: 5.19, label: "실험 후" }
 			]
 		},
 		{
 			type: "error",
-			name: "Error Range",
-			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} in - {y[1]} in",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} L - {y[1]} L",
 			dataPoints: [
-				{ y: [3.6, 3.8], label: "Jan" },
-				{ y: [3.0, 3.4], label: "Feb" },
-				{ y: [3.8, 4.3], label: "Mar" },
-				{ y: [3.9, 4.2], label: "Apr" },
-				{ y: [4.3, 4.6], label: "May" },
-				{ y: [3.3, 3.6], label: "Jun" },
-				{ y: [4.0, 4.4], label: "Jul" },
-				{ y: [3.9, 4.3], label: "Aug" },
-				{ y: [3.8, 4.2], label: "Sep" },
-				{ y: [3.4, 3.7], label: "Oct" },
-				{ y: [3.8, 4.2], label: "Nov" },
-				{ y: [3.7, 4.0], label: "Dec" }
+				{ y: [4.84-0.33/2, 4.84+0.33/2], label: "실험 전" },
+				{ y: [5.19-0.28/2, 5.19+0.28/2], label: "실험 후" }
+			]
+	},
+  {
+		type: "line",
+			name: "통제군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} L",
+			markerType: "none",
+			dataPoints: [
+				{ y: 4.66, label: "실험 전" },
+				{ y: 4.63, label: "실험 후" }
+			]
+		},
+		{
+			type: "error",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} L - {y[1]} L",
+			dataPoints: [
+				{ y: [4.66-0.56/2, 4.66+0.56/2], label: "실험 전" },
+				{ y: [4.63-0.54/2, 4.63+0.54/2], label: "실험 후" }
 			]
 	}]
 });
@@ -617,55 +595,54 @@ chart9.render();
 let chart10 = new CanvasJS.Chart("vc", {
 	animationEnabled: true,
 	title:{
-		text: "Predicted Rainfall - 2017"
+		text: "VC (폐활량)"
 	},
 	axisX: {
 		interval: 1
 	},
 	axisY:{
-		title: "Precipitation (in inch)",
-		suffix: " in"
+		title: "수치(L)",
+		suffix: " L"
 	},
 	toolTip: {
 		shared: true
 	},
 	data: [{
 		type: "line",
-			name: "Predicted",
-			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} in",
+			name: "실험군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} L",
 			markerType: "none",
 			dataPoints: [
-				{ y: 3.69, label: "Jan" },
-				{ y: 3.06, label: "Feb" },
-				{ y: 4.08, label: "Mar" },
-				{ y: 4.06, label: "Apr" },
-				{ y: 4.48, label: "May" },
-				{ y: 3.45, label: "Jun" },
-				{ y: 4.17, label: "Jul" },
-				{ y: 4.05, label: "Aug" },
-				{ y: 4.05, label: "Sep" },
-				{ y: 3.5, label: "Oct" },
-				{ y: 4.0, label: "Nov" },
-				{ y: 3.86, label: "Dec" }
+				{ y: 2.87, label: "실험 전" },
+				{ y: 3.45, label: "실험 후" }
 			]
 		},
 		{
 			type: "error",
-			name: "Error Range",
-			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} in - {y[1]} in",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} L - {y[1]} L",
 			dataPoints: [
-				{ y: [3.6, 3.8], label: "Jan" },
-				{ y: [3.0, 3.4], label: "Feb" },
-				{ y: [3.8, 4.3], label: "Mar" },
-				{ y: [3.9, 4.2], label: "Apr" },
-				{ y: [4.3, 4.6], label: "May" },
-				{ y: [3.3, 3.6], label: "Jun" },
-				{ y: [4.0, 4.4], label: "Jul" },
-				{ y: [3.9, 4.3], label: "Aug" },
-				{ y: [3.8, 4.2], label: "Sep" },
-				{ y: [3.4, 3.7], label: "Oct" },
-				{ y: [3.8, 4.2], label: "Nov" },
-				{ y: [3.7, 4.0], label: "Dec" }
+				{ y: [2.87-0.70/2, 2.87+0.70/2], label: "실험 전" },
+				{ y: [3.45-0.51/2, 3.45+0.51/2], label: "실험 후" }
+			]
+	},
+  {
+		type: "line",
+			name: "통제군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} L",
+			markerType: "none",
+			dataPoints: [
+				{ y: 2.62, label: "실험 전" },
+				{ y: 2.72, label: "실험 후" }
+			]
+		},
+		{
+			type: "error",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} L - {y[1]} L",
+			dataPoints: [
+				{ y: [2.62-0.42/2, 2.62+0.42/2], label: "실험 전" },
+				{ y: [2.72-0.50/2, 2.72+0.50/2], label: "실험 후" }
 			]
 	}]
 });
@@ -674,55 +651,54 @@ chart10.render();
 let chart11 = new CanvasJS.Chart("erv", {
 	animationEnabled: true,
 	title:{
-		text: "Predicted Rainfall - 2017"
+		text: "ERV (호기 예비량)"
 	},
 	axisX: {
 		interval: 1
 	},
 	axisY:{
-		title: "Precipitation (in inch)",
-		suffix: " in"
+		title: "수치(L)",
+		suffix: " L"
 	},
 	toolTip: {
 		shared: true
 	},
 	data: [{
 		type: "line",
-			name: "Predicted",
-			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} in",
+			name: "실험군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} L",
 			markerType: "none",
 			dataPoints: [
-				{ y: 3.69, label: "Jan" },
-				{ y: 3.06, label: "Feb" },
-				{ y: 4.08, label: "Mar" },
-				{ y: 4.06, label: "Apr" },
-				{ y: 4.48, label: "May" },
-				{ y: 3.45, label: "Jun" },
-				{ y: 4.17, label: "Jul" },
-				{ y: 4.05, label: "Aug" },
-				{ y: 4.05, label: "Sep" },
-				{ y: 3.5, label: "Oct" },
-				{ y: 4.0, label: "Nov" },
-				{ y: 3.86, label: "Dec" }
+				{ y: 1.66, label: "실험 전" },
+				{ y: 2.04, label: "실험 후" }
 			]
 		},
 		{
 			type: "error",
-			name: "Error Range",
-			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} in - {y[1]} in",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} L - {y[1]} L",
 			dataPoints: [
-				{ y: [3.6, 3.8], label: "Jan" },
-				{ y: [3.0, 3.4], label: "Feb" },
-				{ y: [3.8, 4.3], label: "Mar" },
-				{ y: [3.9, 4.2], label: "Apr" },
-				{ y: [4.3, 4.6], label: "May" },
-				{ y: [3.3, 3.6], label: "Jun" },
-				{ y: [4.0, 4.4], label: "Jul" },
-				{ y: [3.9, 4.3], label: "Aug" },
-				{ y: [3.8, 4.2], label: "Sep" },
-				{ y: [3.4, 3.7], label: "Oct" },
-				{ y: [3.8, 4.2], label: "Nov" },
-				{ y: [3.7, 4.0], label: "Dec" }
+				{ y: [1.66-0.25/2, 1.66+0.25/2], label: "실험 전" },
+				{ y: [2.04-0.31/2, 2.04+0.31/2], label: "실험 후" }
+			]
+	},
+  {
+		type: "line",
+			name: "통제군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} L",
+			markerType: "none",
+			dataPoints: [
+				{ y: 1.50, label: "실험 전" },
+				{ y: 1.58, label: "실험 후" }
+			]
+		},
+		{
+			type: "error",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} L - {y[1]} L",
+			dataPoints: [
+				{ y: [1.50-0.55/2, 1.50+0.55/2], label: "실험 전" },
+				{ y: [1.58-0.61/2, 1.58+0.61/2], label: "실험 후" }
 			]
 	}]
 });
@@ -731,55 +707,54 @@ chart11.render();
 let chart12 = new CanvasJS.Chart("mvv", {
 	animationEnabled: true,
 	title:{
-		text: "Predicted Rainfall - 2017"
+		text: "MVV (최대 노력 환기량)"
 	},
 	axisX: {
 		interval: 1
 	},
 	axisY:{
-		title: "Precipitation (in inch)",
-		suffix: " in"
+		title: "수치(L/ml)",
+		suffix: " L/ml"
 	},
 	toolTip: {
 		shared: true
 	},
 	data: [{
 		type: "line",
-			name: "Predicted",
-			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} in",
+			name: "실험군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} L/ml",
 			markerType: "none",
 			dataPoints: [
-				{ y: 3.69, label: "Jan" },
-				{ y: 3.06, label: "Feb" },
-				{ y: 4.08, label: "Mar" },
-				{ y: 4.06, label: "Apr" },
-				{ y: 4.48, label: "May" },
-				{ y: 3.45, label: "Jun" },
-				{ y: 4.17, label: "Jul" },
-				{ y: 4.05, label: "Aug" },
-				{ y: 4.05, label: "Sep" },
-				{ y: 3.5, label: "Oct" },
-				{ y: 4.0, label: "Nov" },
-				{ y: 3.86, label: "Dec" }
+				{ y: 173.41, label: "실험 전" },
+				{ y: 185.35, label: "실험 후" }
 			]
 		},
 		{
 			type: "error",
-			name: "Error Range",
-			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} in - {y[1]} in",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} L/ml - {y[1]} L/ml",
 			dataPoints: [
-				{ y: [3.6, 3.8], label: "Jan" },
-				{ y: [3.0, 3.4], label: "Feb" },
-				{ y: [3.8, 4.3], label: "Mar" },
-				{ y: [3.9, 4.2], label: "Apr" },
-				{ y: [4.3, 4.6], label: "May" },
-				{ y: [3.3, 3.6], label: "Jun" },
-				{ y: [4.0, 4.4], label: "Jul" },
-				{ y: [3.9, 4.3], label: "Aug" },
-				{ y: [3.8, 4.2], label: "Sep" },
-				{ y: [3.4, 3.7], label: "Oct" },
-				{ y: [3.8, 4.2], label: "Nov" },
-				{ y: [3.7, 4.0], label: "Dec" }
+				{ y: [173.41-24.23/2, 173.41+24.23/2], label: "실험 전" },
+				{ y: [185.35-17.77/2, 185.35+17.77/2], label: "실험 후" }
+			]
+	},
+  {
+		type: "line",
+			name: "통제군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} L/ml",
+			markerType: "none",
+			dataPoints: [
+				{ y: 171.01, label: "실험 전" },
+				{ y: 178.36, label: "실험 후" }
+			]
+		},
+		{
+			type: "error",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} L/ml - {y[1]} L/ml",
+			dataPoints: [
+				{ y: [171.01-28.35/2, 171.01+28.35/2], label: "실험 전" },
+				{ y: [178.36-20.57/2, 178.36+20.57/2], label: "실험 후" }
 			]
 	}]
 });
@@ -789,55 +764,54 @@ chart12.render();
 let chart13 = new CanvasJS.Chart("tc", {
 	animationEnabled: true,
 	title:{
-		text: "Predicted Rainfall - 2017"
+		text: "TC (총 콜레스테롤)"
 	},
 	axisX: {
 		interval: 1
 	},
 	axisY:{
-		title: "Precipitation (in inch)",
-		suffix: " in"
+		title: "수치(mg/dl)",
+		suffix: " mg/dl"
 	},
 	toolTip: {
 		shared: true
 	},
 	data: [{
 		type: "line",
-			name: "Predicted",
-			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} in",
+			name: "실험군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} mg/dl",
 			markerType: "none",
 			dataPoints: [
-				{ y: 3.69, label: "Jan" },
-				{ y: 3.06, label: "Feb" },
-				{ y: 4.08, label: "Mar" },
-				{ y: 4.06, label: "Apr" },
-				{ y: 4.48, label: "May" },
-				{ y: 3.45, label: "Jun" },
-				{ y: 4.17, label: "Jul" },
-				{ y: 4.05, label: "Aug" },
-				{ y: 4.05, label: "Sep" },
-				{ y: 3.5, label: "Oct" },
-				{ y: 4.0, label: "Nov" },
-				{ y: 3.86, label: "Dec" }
+				{ y: 177.11, label: "실험 전" },
+				{ y: 140.27, label: "실험 후" }
 			]
 		},
 		{
 			type: "error",
-			name: "Error Range",
-			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} in - {y[1]} in",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} mg/dl - {y[1]} mg/dl",
 			dataPoints: [
-				{ y: [3.6, 3.8], label: "Jan" },
-				{ y: [3.0, 3.4], label: "Feb" },
-				{ y: [3.8, 4.3], label: "Mar" },
-				{ y: [3.9, 4.2], label: "Apr" },
-				{ y: [4.3, 4.6], label: "May" },
-				{ y: [3.3, 3.6], label: "Jun" },
-				{ y: [4.0, 4.4], label: "Jul" },
-				{ y: [3.9, 4.3], label: "Aug" },
-				{ y: [3.8, 4.2], label: "Sep" },
-				{ y: [3.4, 3.7], label: "Oct" },
-				{ y: [3.8, 4.2], label: "Nov" },
-				{ y: [3.7, 4.0], label: "Dec" }
+				{ y: [177.11-35.26/2, 177.11+35.26/2], label: "실험 전" },
+				{ y: [140.27-27.06/2, 140.27+27.06/2], label: "실험 후" }
+			]
+	},
+  {
+		type: "line",
+			name: "통제군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} mg/dl",
+			markerType: "none",
+			dataPoints: [
+				{ y: 176.91, label: "실험 전" },
+				{ y: 172.36, label: "실험 후" }
+			]
+		},
+		{
+			type: "error",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} mg/dl - {y[1]} mg/dl",
+			dataPoints: [
+				{ y: [176.91-32.35/2, 176.91+32.35/2], label: "실험 전" },
+				{ y: [172.36-20.10/2, 172.36+20.10/2], label: "실험 후" }
 			]
 	}]
 });
@@ -846,55 +820,54 @@ chart13.render();
 let chart14 = new CanvasJS.Chart("tg", {
 	animationEnabled: true,
 	title:{
-		text: "Predicted Rainfall - 2017"
+		text: "TG (중성지방)"
 	},
 	axisX: {
 		interval: 1
 	},
 	axisY:{
-		title: "Precipitation (in inch)",
-		suffix: " in"
+		title: "수치(mg/dl)",
+		suffix: " mg/dl"
 	},
 	toolTip: {
 		shared: true
 	},
 	data: [{
 		type: "line",
-			name: "Predicted",
-			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} in",
+			name: "실험군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} mg/dl",
 			markerType: "none",
 			dataPoints: [
-				{ y: 3.69, label: "Jan" },
-				{ y: 3.06, label: "Feb" },
-				{ y: 4.08, label: "Mar" },
-				{ y: 4.06, label: "Apr" },
-				{ y: 4.48, label: "May" },
-				{ y: 3.45, label: "Jun" },
-				{ y: 4.17, label: "Jul" },
-				{ y: 4.05, label: "Aug" },
-				{ y: 4.05, label: "Sep" },
-				{ y: 3.5, label: "Oct" },
-				{ y: 4.0, label: "Nov" },
-				{ y: 3.86, label: "Dec" }
+				{ y: 102.91, label: "실험 전" },
+				{ y: 79.09, label: "실험 후" }
 			]
 		},
 		{
 			type: "error",
-			name: "Error Range",
-			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} in - {y[1]} in",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} mg/dl - {y[1]} mg/dl",
 			dataPoints: [
-				{ y: [3.6, 3.8], label: "Jan" },
-				{ y: [3.0, 3.4], label: "Feb" },
-				{ y: [3.8, 4.3], label: "Mar" },
-				{ y: [3.9, 4.2], label: "Apr" },
-				{ y: [4.3, 4.6], label: "May" },
-				{ y: [3.3, 3.6], label: "Jun" },
-				{ y: [4.0, 4.4], label: "Jul" },
-				{ y: [3.9, 4.3], label: "Aug" },
-				{ y: [3.8, 4.2], label: "Sep" },
-				{ y: [3.4, 3.7], label: "Oct" },
-				{ y: [3.8, 4.2], label: "Nov" },
-				{ y: [3.7, 4.0], label: "Dec" }
+				{ y: [102.91-25.02/2, 102.91+25.02/2], label: "실험 전" },
+				{ y: [79.09-11.55/2, 79.09+11.55/2], label: "실험 후" }
+			]
+	},
+  {
+		type: "line",
+			name: "통제군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} mg/dl",
+			markerType: "none",
+			dataPoints: [
+				{ y: 113.09, label: "실험 전" },
+				{ y: 108.09, label: "실험 후" }
+			]
+		},
+		{
+			type: "error",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} mg/dl - {y[1]} mg/dl",
+			dataPoints: [
+				{ y: [113.09-68.84/2, 113.09+68.84/2], label: "실험 전" },
+				{ y: [108.09-29.89/2, 108.09+29.89/2], label: "실험 후" }
 			]
 	}]
 });
@@ -903,55 +876,54 @@ chart14.render();
 let chart15 = new CanvasJS.Chart("crea", {
 	animationEnabled: true,
 	title:{
-		text: "Predicted Rainfall - 2017"
+		text: "크레아티닌"
 	},
 	axisX: {
 		interval: 1
 	},
 	axisY:{
-		title: "Precipitation (in inch)",
-		suffix: " in"
+		title: "수치(mg/dl)",
+		suffix: " mg/dl"
 	},
 	toolTip: {
 		shared: true
 	},
 	data: [{
 		type: "line",
-			name: "Predicted",
-			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} in",
+			name: "실험군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} mg/dl",
 			markerType: "none",
 			dataPoints: [
-				{ y: 3.69, label: "Jan" },
-				{ y: 3.06, label: "Feb" },
-				{ y: 4.08, label: "Mar" },
-				{ y: 4.06, label: "Apr" },
-				{ y: 4.48, label: "May" },
-				{ y: 3.45, label: "Jun" },
-				{ y: 4.17, label: "Jul" },
-				{ y: 4.05, label: "Aug" },
-				{ y: 4.05, label: "Sep" },
-				{ y: 3.5, label: "Oct" },
-				{ y: 4.0, label: "Nov" },
-				{ y: 3.86, label: "Dec" }
+				{ y: 0.88, label: "실험 전" },
+				{ y: 1.01, label: "실험 후" }
 			]
 		},
 		{
 			type: "error",
-			name: "Error Range",
-			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} in - {y[1]} in",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} mg/dl - {y[1]} mg/dl",
 			dataPoints: [
-				{ y: [3.6, 3.8], label: "Jan" },
-				{ y: [3.0, 3.4], label: "Feb" },
-				{ y: [3.8, 4.3], label: "Mar" },
-				{ y: [3.9, 4.2], label: "Apr" },
-				{ y: [4.3, 4.6], label: "May" },
-				{ y: [3.3, 3.6], label: "Jun" },
-				{ y: [4.0, 4.4], label: "Jul" },
-				{ y: [3.9, 4.3], label: "Aug" },
-				{ y: [3.8, 4.2], label: "Sep" },
-				{ y: [3.4, 3.7], label: "Oct" },
-				{ y: [3.8, 4.2], label: "Nov" },
-				{ y: [3.7, 4.0], label: "Dec" }
+				{ y: [0.88-0.37/2, 0.88+0.37/2], label: "실험 전" },
+				{ y: [1.01-0.32/2, 1.01+0.32/2], label: "실험 후" }
+			]
+	},
+  {
+		type: "line",
+			name: "통제군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} mg/dl",
+			markerType: "none",
+			dataPoints: [
+				{ y: 0.89, label: "실험 전" },
+				{ y: 0.90, label: "실험 후" }
+			]
+		},
+		{
+			type: "error",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} mg/dl - {y[1]} mg/dl",
+			dataPoints: [
+				{ y: [0.89-0.39/2, 0.89+0.39/2], label: "실험 전" },
+				{ y: [0.90-0.25/2, 0.90+0.25/2], label: "실험 후" }
 			]
 	}]
 });
@@ -960,55 +932,54 @@ chart15.render();
 let chart16 = new CanvasJS.Chart("hdl", {
 	animationEnabled: true,
 	title:{
-		text: "Predicted Rainfall - 2017"
+		text: "HDL-C (고밀도 콜레스테롤)"
 	},
 	axisX: {
 		interval: 1
 	},
 	axisY:{
-		title: "Precipitation (in inch)",
-		suffix: " in"
+		title: "수치(mg/dl)",
+		suffix: " mg/dl"
 	},
 	toolTip: {
 		shared: true
 	},
 	data: [{
 		type: "line",
-			name: "Predicted",
-			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} in",
+			name: "실험군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} mg/dl",
 			markerType: "none",
 			dataPoints: [
-				{ y: 3.69, label: "Jan" },
-				{ y: 3.06, label: "Feb" },
-				{ y: 4.08, label: "Mar" },
-				{ y: 4.06, label: "Apr" },
-				{ y: 4.48, label: "May" },
-				{ y: 3.45, label: "Jun" },
-				{ y: 4.17, label: "Jul" },
-				{ y: 4.05, label: "Aug" },
-				{ y: 4.05, label: "Sep" },
-				{ y: 3.5, label: "Oct" },
-				{ y: 4.0, label: "Nov" },
-				{ y: 3.86, label: "Dec" }
+				{ y: 55.36, label: "실험 전" },
+				{ y: 75.91, label: "실험 후" }
 			]
 		},
 		{
 			type: "error",
-			name: "Error Range",
-			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} in - {y[1]} in",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} mg/dl - {y[1]} mg/dl",
 			dataPoints: [
-				{ y: [3.6, 3.8], label: "Jan" },
-				{ y: [3.0, 3.4], label: "Feb" },
-				{ y: [3.8, 4.3], label: "Mar" },
-				{ y: [3.9, 4.2], label: "Apr" },
-				{ y: [4.3, 4.6], label: "May" },
-				{ y: [3.3, 3.6], label: "Jun" },
-				{ y: [4.0, 4.4], label: "Jul" },
-				{ y: [3.9, 4.3], label: "Aug" },
-				{ y: [3.8, 4.2], label: "Sep" },
-				{ y: [3.4, 3.7], label: "Oct" },
-				{ y: [3.8, 4.2], label: "Nov" },
-				{ y: [3.7, 4.0], label: "Dec" }
+				{ y: [55.36-10.45/2, 55.36+10.45/2], label: "실험 전" },
+				{ y: [75.91-9.10/2, 75.91+9.10/2], label: "실험 후" }
+			]
+	},
+  {
+		type: "line",
+			name: "통제군",
+			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} mg/dl",
+			markerType: "none",
+			dataPoints: [
+				{ y: 53.18, label: "실험 전" },
+				{ y: 60.45, label: "실험 후" }
+			]
+		},
+		{
+			type: "error",
+			name: "오차범위",
+			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} mg/dl - {y[1]} mg/dl",
+			dataPoints: [
+				{ y: [53.18-12.44/2, 53.18+12.44/2], label: "실험 전" },
+				{ y: [60.45-11.51/2, 60.45+11.51/2], label: "실험 후" }
 			]
 	}]
 });
