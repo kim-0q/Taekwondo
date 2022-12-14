@@ -747,3 +747,64 @@ section{
   margin: 0 auto;
   padding: 2% 0;
 }
+
+#Body__Blood{
+  background-color: aquamarine;
+}
+
+#blood__title{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 2%;
+}
+
+#blood__intro{
+  width: 100%;
+  margin: 0 auto;
+  background-color: beige;
+  padding: 30px 0;
+}
+
+#blood__intro__intro{
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+#blood__intro__cate{
+  line-height: 25px;
+  padding-left: 3%;
+}
+
+#blood__graph__container{
+  display: grid;
+  width: 80%;
+  height: 500px;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 80px;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-around;
+  margin: 3% auto;
+}
+
+#blood__text{
+  background-color: beige;
+  text-align: center;
+  width: 70%;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+#Con__Result{
+  background-color: burlywood;
+}
+
+#con__title{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 3%;
+}
+
+#con__result{
+  margin-bottom: 2%;
+}
