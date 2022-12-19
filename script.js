@@ -17,10 +17,12 @@ new Chart(ctx, {
     ]
   },
   options: {
-    title: {
-      display: true,
-      text: '전국 태권도장 수(1995~2020)'
-    }
+    plugins: {
+      title: {
+          display: true,
+          text: '연도별 전국 태권도장 수 변화'
+      }
+  },
   }
 });
 
@@ -37,11 +39,12 @@ new Chart(btx, {
     ]
   },
   options: {
-    legend: { display: false },
-    title: {
-      display: true,
-      text: 'Predicted world population (millions) in 2050'
-    }
+    plugins: {
+      title: {
+          display: true,
+          text: '2017년 10대 교외 체육활동 상위 5종목'
+      }
+  },
   }
 });
 
@@ -56,12 +59,9 @@ new Chart(ptx, {
     }]
   },
   options: {
-    responsive: false,
-    title: {
-      display: true,
-      text: '제목 왜 안보임'
-    }
+    responsive:false
   }
+  
 });
 
 new Chart(rtx, {
@@ -184,7 +184,7 @@ let chart = new CanvasJS.Chart("bone-chart", {
     name: "골밀도 수치 ",
     toolTipContent: "<b>{label}</b> <br> <b>{name}:</b> {y}g/cm2",
     dataPoints: [
-      { y: 0.35, label: "제어군" },
+      { y: 0.35, label: "제어군", color:"#a9a9a9" },
       { y: 0.48, label: "운동군" }
     ]
   },
@@ -193,7 +193,7 @@ let chart = new CanvasJS.Chart("bone-chart", {
     name: "오차범위 ",
     toolTipContent: "<b>{name}:</b> {y[0]} - {y[1]}g/cm2",
     dataPoints: [
-      { y: [0.34, 0.36], label:"제어군" },
+      { y: [0.34, 0.36], label:"제어군"},
       { y: [0.47, 0.49], label:"운동군" },        
     ]
   }]
@@ -216,7 +216,7 @@ let chart1 = new CanvasJS.Chart("grip", {
     name: "악력 ",
     toolTipContent: "<b>{label}</b> <br> <b>{name}:</b> {y}kg",
     dataPoints: [
-      { y: 38.50, label: "제어군" },
+      { y: 38.50, label: "제어군", color:"#a9a9a9" },
       { y: 48.60, label: "운동군" }
     ]
   },
@@ -225,7 +225,7 @@ let chart1 = new CanvasJS.Chart("grip", {
     name: "오차범위 ",
     toolTipContent: "<b>{name}:</b> {y[0]} - {y[1]}kg",
     dataPoints: [
-      { y: [35.40, 41.60], label:"제어군" },
+      { y: [35.40, 41.60], label:"제어군"},
       { y: [46.30, 50.90], label:"운동군" },        
     ]
   }]
@@ -248,7 +248,7 @@ let chart2 = new CanvasJS.Chart("situp", {
     name: "개수 ",
     toolTipContent: "<b>{label}</b> <br> <b>{name}:</b> {y}개",
     dataPoints: [
-      { y: 28.50, label: "제어군" },
+      { y: 28.50, label: "제어군",color:"#a9a9a9" },
       { y: 42.60, label: "운동군" }
     ]
   },
@@ -280,7 +280,7 @@ let chart3 = new CanvasJS.Chart("react", {
     name: "시간 ",
     toolTipContent: "<b>{label}</b> <br> <b>{name}:</b> {y}초",
     dataPoints: [
-      { y: 0.45, label: "제어군" },
+      { y: 0.45, label: "제어군", color:"#a9a9a9"},
       { y: 0.32, label: "운동군" }
     ]
   },
@@ -312,7 +312,7 @@ let chart4 = new CanvasJS.Chart("jump", {
     name: "높이 ",
     toolTipContent: "<b>{label}</b> <br> <b>{name}:</b> {y}cm",
     dataPoints: [
-      { y: 39.90, label: "제어군" },
+      { y: 39.90, label: "제어군", color:"#a9a9a9"},
       { y: 46.80, label: "운동군" }
     ]
   },
@@ -366,16 +366,18 @@ let chart5 = new CanvasJS.Chart("protein", {
   {
 		type: "line",
 			name: "통제군",
+      color:"#a9a9a9",
 			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} kg",
 			markerType: "none",
 			dataPoints: [
-				{ y: 14.70, label: "실험 전" },
+				{ y: 14.70, label: "실험 전", color:"#a9a9a9"},
 				{ y: 14.96, label: "실험 후" }
 			]
 		},
 		{
 			type: "error",
 			name: "오차범위",
+      color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} kg - {y[1]} kg",
 			dataPoints: [
 				{ y: [13.86, 15.54], label: "실험 전" },
@@ -406,7 +408,7 @@ let chart6 = new CanvasJS.Chart("chegi", {
 			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} %",
 			markerType: "none",
 			dataPoints: [
-				{ y: 18.20, label: "실험 전" },
+				{ y: 18.20, label: "실험 전", color:"#a9a9a9"},
 				{ y: 13.62, label: "실험 후" }
 			]
 		},
@@ -422,16 +424,18 @@ let chart6 = new CanvasJS.Chart("chegi", {
   {
 		type: "line",
 			name: "통제군",
+      color:"#a9a9a9",
 			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} %",
 			markerType: "none",
 			dataPoints: [
-				{ y: 14.70, label: "실험 전" },
+				{ y: 14.70, label: "실험 전", color:"#a9a9a9" },
 				{ y: 14.96, label: "실험 후" }
 			]
 		},
 		{
 			type: "error",
 			name: "오차범위",
+      color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} % - {y[1]} %",
 			dataPoints: [
 				{ y: [13.86, 15.54], label: "실험 전" },
@@ -478,6 +482,7 @@ let chart7 = new CanvasJS.Chart("bokbu", {
   {
 		type: "line",
 			name: "통제군",
+      color:"#a9a9a9",
 			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} %",
 			markerType: "none",
 			dataPoints: [
@@ -488,6 +493,7 @@ let chart7 = new CanvasJS.Chart("bokbu", {
 		{
 			type: "error",
 			name: "오차범위",
+      color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} % - {y[1]} %",
 			dataPoints: [
 				{ y: [0.84-0.38/2, 0.84+0.38/2], label: "실험 전" },
@@ -525,6 +531,7 @@ let chart8 = new CanvasJS.Chart("bokbu2", {
   {
 		type: "line",
 			name: "통제군",
+      color:"#a9a9a9",
 			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} %",
 			markerType: "none",
 			dataPoints: [
@@ -573,6 +580,7 @@ let chart9 = new CanvasJS.Chart("fvc", {
   {
 		type: "line",
 			name: "통제군",
+      color:"#a9a9a9",
 			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} L",
 			markerType: "none",
 			dataPoints: [
@@ -583,6 +591,7 @@ let chart9 = new CanvasJS.Chart("fvc", {
 		{
 			type: "error",
 			name: "오차범위",
+      color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} L - {y[1]} L",
 			dataPoints: [
 				{ y: [4.66-0.56/2, 4.66+0.56/2], label: "실험 전" },
@@ -629,6 +638,7 @@ let chart10 = new CanvasJS.Chart("vc", {
   {
 		type: "line",
 			name: "통제군",
+      color:"#a9a9a9",
 			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} L",
 			markerType: "none",
 			dataPoints: [
@@ -639,6 +649,7 @@ let chart10 = new CanvasJS.Chart("vc", {
 		{
 			type: "error",
 			name: "오차범위",
+      color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} L - {y[1]} L",
 			dataPoints: [
 				{ y: [2.62-0.42/2, 2.62+0.42/2], label: "실험 전" },
@@ -685,6 +696,7 @@ let chart11 = new CanvasJS.Chart("erv", {
   {
 		type: "line",
 			name: "통제군",
+      color:"#a9a9a9",
 			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} L",
 			markerType: "none",
 			dataPoints: [
@@ -695,6 +707,7 @@ let chart11 = new CanvasJS.Chart("erv", {
 		{
 			type: "error",
 			name: "오차범위",
+      color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} L - {y[1]} L",
 			dataPoints: [
 				{ y: [1.50-0.55/2, 1.50+0.55/2], label: "실험 전" },
@@ -741,6 +754,7 @@ let chart12 = new CanvasJS.Chart("mvv", {
   {
 		type: "line",
 			name: "통제군",
+      color:"#a9a9a9",
 			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} L/ml",
 			markerType: "none",
 			dataPoints: [
@@ -751,6 +765,7 @@ let chart12 = new CanvasJS.Chart("mvv", {
 		{
 			type: "error",
 			name: "오차범위",
+      color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} L/ml - {y[1]} L/ml",
 			dataPoints: [
 				{ y: [171.01-28.35/2, 171.01+28.35/2], label: "실험 전" },
@@ -798,6 +813,7 @@ let chart13 = new CanvasJS.Chart("tc", {
   {
 		type: "line",
 			name: "통제군",
+      color:"#a9a9a9",
 			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} mg/dl",
 			markerType: "none",
 			dataPoints: [
@@ -808,6 +824,7 @@ let chart13 = new CanvasJS.Chart("tc", {
 		{
 			type: "error",
 			name: "오차범위",
+      color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} mg/dl - {y[1]} mg/dl",
 			dataPoints: [
 				{ y: [176.91-32.35/2, 176.91+32.35/2], label: "실험 전" },
@@ -854,6 +871,7 @@ let chart14 = new CanvasJS.Chart("tg", {
   {
 		type: "line",
 			name: "통제군",
+      color:"#a9a9a9",
 			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} mg/dl",
 			markerType: "none",
 			dataPoints: [
@@ -864,6 +882,7 @@ let chart14 = new CanvasJS.Chart("tg", {
 		{
 			type: "error",
 			name: "오차범위",
+      color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} mg/dl - {y[1]} mg/dl",
 			dataPoints: [
 				{ y: [113.09-68.84/2, 113.09+68.84/2], label: "실험 전" },
@@ -910,6 +929,7 @@ let chart15 = new CanvasJS.Chart("crea", {
   {
 		type: "line",
 			name: "통제군",
+      color:"#a9a9a9",
 			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} mg/dl",
 			markerType: "none",
 			dataPoints: [
@@ -920,6 +940,7 @@ let chart15 = new CanvasJS.Chart("crea", {
 		{
 			type: "error",
 			name: "오차범위",
+      color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} mg/dl - {y[1]} mg/dl",
 			dataPoints: [
 				{ y: [0.89-0.39/2, 0.89+0.39/2], label: "실험 전" },
@@ -966,6 +987,7 @@ let chart16 = new CanvasJS.Chart("hdl", {
   {
 		type: "line",
 			name: "통제군",
+      color:"#a9a9a9",
 			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} mg/dl",
 			markerType: "none",
 			dataPoints: [
@@ -976,6 +998,7 @@ let chart16 = new CanvasJS.Chart("hdl", {
 		{
 			type: "error",
 			name: "오차범위",
+      color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} mg/dl - {y[1]} mg/dl",
 			dataPoints: [
 				{ y: [53.18-12.44/2, 53.18+12.44/2], label: "실험 전" },
