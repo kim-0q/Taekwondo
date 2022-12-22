@@ -59,7 +59,13 @@ new Chart(ptx, {
     }]
   },
   options: {
-    responsive:false
+    responsive:false,
+    plugins: {
+      title: {
+          display: true,
+          text: '2014년도 연령별 태권도 수련생 비율'
+      }
+  }
   }
   
 });
@@ -191,6 +197,7 @@ let chart = new CanvasJS.Chart("bone-chart", {
   {
     type: "error",
     name: "오차범위 ",
+    errorWidth: "20px",
     toolTipContent: "<b>{name}:</b> {y[0]} - {y[1]}g/cm2",
     dataPoints: [
       { y: [0.34, 0.36], label:"제어군"},

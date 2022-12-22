@@ -9,15 +9,10 @@ ul li{
   cursor: pointer;
 }
 
-a{
-  text-decoration: none;
-  color: #333;
-}
-
 nav{
   width: 100%;
   position: fixed;
-  background: transparent;
+  background: #A3C6C4;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,7 +22,7 @@ nav{
 #navbar__logo{
   font-size: 25px;
   margin-left: 25px;
-  color: white;
+  color: rgb(235,235,235);
 }
 
 .menu{
@@ -36,13 +31,9 @@ nav{
 
 #menubar {
   font:bold 14px "malgun gothic";
-  color:rgb(255, 255, 255);
-  line-height: 50px; 
+  color:rgb(235, 235, 235);
+  line-height: 55px; 
   text-align: center;
-}
-
-#navbar{
-  padding: 10px;
 }
 
 .menuitem{
@@ -59,9 +50,15 @@ nav{
   display:none;
   position: absolute;
   font-size:13px;
-  background: skyblue;
+  background: #354649;
   text-align:center;
+  line-height: 50px;
   right:-16px;
+  color: rgb(223, 223, 223);
+}
+
+#navbar{
+  padding-right: 10px;
 }
 
 #menubar > ul > li:last-child > ul {
@@ -69,7 +66,7 @@ nav{
 }
 
 #menubar>ul>li:hover{
-  color: rgb(93, 220, 174);
+  color: #354649;
 }
 
 .sidemenu{
@@ -81,7 +78,8 @@ nav{
 }
 
 .sidemenu > li:hover {
-  background-color: blanchedalmond;
+  background-color: #A3C6C4;
+  color: rgb(0, 0, 0);
   transition: ease-in-out 0.1s;
   }
 
@@ -129,7 +127,7 @@ section{
 }
 
 #Abstract{
-  background-color: beige;
+  background-color: #E0E7E9;
 }
 
 #abstract__title{
@@ -169,7 +167,7 @@ section{
 }
 
 #Intro__Goal{
-  background-color: rgba(69, 219, 245, 0.683);
+  background-color: #cedde1;
 }
 
 #goal__title{
@@ -187,10 +185,11 @@ section{
   text-align: justify;
   width: 480px;
   height: 250px;
-  padding: 4% 20px;
+  padding: 3% 20px;
   margin: auto 0;
   margin-right: 5%;
-  background-color: beige;
+  background-color: #F7F1F0;
+  line-height: 30px;
 }
 
 #goal__photo{
@@ -207,7 +206,7 @@ section{
 
 
 #Intro__Reason{
-  background-color:beige
+  background-color: #E0E7E9;
 }
 
 #canvas {float:left; position:relative; width: 350px; height:400px; margin: 0;}
@@ -298,7 +297,7 @@ section{
 /* 컨테이너 width 320 height 400 */
 
 #Intro__Problem{
-  background-color: rgb(220, 245, 224);
+  background-color: #cedde1;
 }
 
 #problem__title{
@@ -310,7 +309,6 @@ section{
 .problem__container{
   display: flex;
   margin-top: 20px;
-  background-color: rgb(201, 253, 195);
   width: 90%;
   margin: auto;
   margin-bottom: 30px;
@@ -319,20 +317,19 @@ section{
 .problem__container2{
   display: flex;
   margin-top: 20px;
-  background-color: rgb(201, 253, 195);
   width: 90%;
   margin: auto;
 }
 
 
 .problem__subtitle{
-  background-color: aquamarine;
+  background-color: #DBC1AD;
   padding: 10px 0 10px 20px;
 }
 
 .problem__text{
   padding-top: 20px;
-  background-color: beige;
+  background-color: #F7F1F0;
   height: 82%;
   padding-left: 20px;
 }
@@ -341,15 +338,16 @@ section{
   width: 100%;
 }
 
+
 #pieChart{
-  padding: 10px;
-  background-color: aqua;
+  padding: 5px;
+  background-color: #F7F1F0;
 }
 
 #problem__imo{
   width: 405px;
   height: 250px;
-  background-color: aqua;
+  background-color: #F7F1F0;
 }
 
 .problem__bg{
@@ -362,19 +360,19 @@ section{
 }
 
 .problem__subtitle2{
-  background-color: aquamarine;
+  background-color: #DBC1AD;
   padding: 10px 20px 10px 0;
 }
 
 .problem__text{
   padding-top: 20px;
-  background-color: beige;
+  background-color: #F7F1F0;
   height: 82%;
   padding-right: 20px;
 }
 
 #Body__Muscle__backkick{
-  background-color: rgba(69, 219, 245, 0.683);
+  background-color: #E0E7E9;
 }
 
 #muscle__title1{
@@ -463,7 +461,7 @@ section{
 }
 
 .muscle__radar{
-  background-color: beige;
+  background-color: #F7F1F0;
   border-radius: 15px;
   margin: 0 auto;
   margin-top: 3%;
@@ -473,7 +471,7 @@ section{
 }
 
 #Body__Muscle__backhook{
-  background-color: burlywood;
+  background-color: #cedde1;
   height: 1000px;
 }
 
@@ -494,7 +492,7 @@ section{
   text-align: center;
   padding: 25px;
   padding-bottom: 45%;
-  background-color: aquamarine;
+  background-color: #DBC1AD;
   margin: 0 auto;
   line-height: 35px;
 }
@@ -519,7 +517,7 @@ section{
 #backhook__gif__text{
   display: inline-block;
   text-align: center;
-  background-color: beige;
+  background-color: #F7F1F0;
   line-height: 25px;
   padding: 15px;
   width: 380px;
@@ -532,7 +530,7 @@ section{
   width: 670px;
   top: 150px;
   left: 470px;
-  background-color: beige;
+  background-color: #F7F1F0;
 }
 
 #backhook__graph__text{
@@ -549,7 +547,7 @@ section{
   width: 85%;
   position: absolute;
   text-align: center;
-  background-color: beige;
+  background-color: #F7F1F0;
   line-height: 30px;
   padding: 25px;
   top: 790px;
@@ -558,7 +556,7 @@ section{
 }
 
 #Body__Bone__Physical{
-  background-color: beige;
+  background-color: #E0E7E9;
 }
 
 #bone__title{
@@ -569,7 +567,7 @@ section{
 
 #bone__intro
 {
-  background-color: aquamarine;
+  background-color: #DBC1AD;
   border-radius: 15px;
   padding: 20px;
   text-align: center;
@@ -619,39 +617,8 @@ section{
   margin-top: 20px;
 }
 
-#Con__Ref{
-  background-color: beige;
-}
-
-#ref__photo
-{
-  width: 500px;
-  height: 400px;
-  background: url(images/taeref.jpg) center/cover no-repeat;
-  margin-right: 4%;
-}
-
-#ref__container{
-  display: flex;
-  justify-content: center;
-}
-
-#ref__title{
-  margin-bottom: 5%;
-  font-size: 20px;
-}
-
-#ref{
-  width: 600px;
-  height: 400px;
-  list-style: inside decimal;
-  text-indent: -20px;
-  padding-left: 20px;
-  line-height: 30px;
-}
-
 #Body__Construct{
-  background-color: rgba(69, 219, 245, 0.683);
+  background-color: #cedde1;
 }
 
 #const__title{
@@ -672,7 +639,7 @@ section{
   margin: auto 0;
   padding: 40px 30px;
   line-height: 30px;
-  background-color: aquamarine;
+  background-color: #DBC1AD;
 }
 
 #const__graph1{
@@ -700,7 +667,7 @@ section{
 }
 
 #lung__intro{
-  background-color: beige;
+  background-color: #F7F1F0;
   /* width: 90%; */
   margin: 0 auto;
   padding: 2% 0;
@@ -743,13 +710,13 @@ section{
 #lung__text{
   width: 75%;
   text-align:center;
-  background-color: beige;
+  background-color: #F7F1F0;
   margin: 0 auto;
   padding: 2% 0;
 }
 
 #Body__Blood{
-  background-color: aquamarine;
+  background-color: #E0E7E9;
 }
 
 #blood__title{
@@ -761,7 +728,7 @@ section{
 #blood__intro{
   width: 100%;
   margin: 0 auto;
-  background-color: beige;
+  background-color: #F7F1F0;
   padding: 30px 0;
 }
 
@@ -788,7 +755,7 @@ section{
 }
 
 #blood__text{
-  background-color: beige;
+  background-color: #F7F1F0;
   text-align: center;
   width: 70%;
   padding: 30px;
@@ -796,7 +763,7 @@ section{
 }
 
 #Con__Result{
-  background-color: burlywood;
+  background-color: #cedde1;
 }
 
 #con__title{
@@ -806,5 +773,45 @@ section{
 }
 
 #con__result{
+  text-align: justify;
+  padding: 0 3%;
   margin-bottom: 2%;
+  line-height: 40px;
+}
+
+#con__suggest{
+  text-align: center;
+  padding: 0 3%;
+  line-height: 40px;
+}
+
+#Con__Ref{
+  background-color: #E0E7E9;
+}
+
+#ref__photo
+{
+  width: 500px;
+  height: 400px;
+  background: url(images/taeref.jpg) center/cover no-repeat;
+  margin-right: 4%;
+}
+
+#ref__container{
+  display: flex;
+  justify-content: center;
+}
+
+#ref__title{
+  margin-bottom: 5%;
+  font-size: 20px;
+}
+
+#ref{
+  width: 600px;
+  height: 400px;
+  list-style: inside decimal;
+  text-indent: -20px;
+  padding-left: 20px;
+  line-height: 30px;
 }
