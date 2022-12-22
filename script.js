@@ -39,6 +39,7 @@ new Chart(btx, {
     ]
   },
   options: {
+    // maxBarThickness: 50,
     plugins: {
       title: {
           display: true,
@@ -173,6 +174,7 @@ new Chart(mtx, {
 
 let chart = new CanvasJS.Chart("bone-chart", {
   animationEnabled: true,
+  theme: "light2",
   title:{
     text: "태권도 수련시 골밀도 수치 비교"
   },
@@ -196,19 +198,21 @@ let chart = new CanvasJS.Chart("bone-chart", {
   },
   {
     type: "error",
-    name: "오차범위 ",
-    errorWidth: "20px",
+    color: "firebrick",
+    whiskerLength: 30,
     toolTipContent: "<b>{name}:</b> {y[0]} - {y[1]}g/cm2",
     dataPoints: [
       { y: [0.34, 0.36], label:"제어군"},
       { y: [0.47, 0.49], label:"운동군" },        
     ]
-  }]
+  }],
+  
 });
 chart.render();
 
 let chart1 = new CanvasJS.Chart("grip", {
   animationEnabled: true,
+  theme: "light2",
   title:{
     text: "악력"
   },
@@ -229,6 +233,8 @@ let chart1 = new CanvasJS.Chart("grip", {
   },
   {
     type: "error",
+    color: "firebrick",
+    whiskerLength: 20,
     name: "오차범위 ",
     toolTipContent: "<b>{name}:</b> {y[0]} - {y[1]}kg",
     dataPoints: [
@@ -241,6 +247,7 @@ chart1.render();
 
 let chart2 = new CanvasJS.Chart("situp", {
   animationEnabled: true,
+  theme: "light2",
   title:{
     text: "싯업 (윗몸일으키기)"
   },
@@ -261,6 +268,8 @@ let chart2 = new CanvasJS.Chart("situp", {
   },
   {
     type: "error",
+    color: "firebrick",
+    whiskerLength: 20,
     name: "오차범위 ",
     toolTipContent: "<b>{name}:</b> {y[0]} - {y[1]}개",
     dataPoints: [
@@ -273,6 +282,7 @@ chart2.render();
 
 let chart3 = new CanvasJS.Chart("react", {
   animationEnabled: true,
+  theme: "light2",
   title:{
     text: "전신반응"
   },
@@ -293,6 +303,8 @@ let chart3 = new CanvasJS.Chart("react", {
   },
   {
     type: "error",
+    color: "firebrick",
+    whiskerLength: 20,
     name: "오차범위 ",
     toolTipContent: "<b>{name}:</b> {y[0]} - {y[1]}초",
     dataPoints: [
@@ -305,6 +317,7 @@ chart3.render();
 
 let chart4 = new CanvasJS.Chart("jump", {
   animationEnabled: true,
+  theme: "light2",
   title:{
     text: "제자리 높이뛰기"
   },
@@ -325,6 +338,8 @@ let chart4 = new CanvasJS.Chart("jump", {
   },
   {
     type: "error",
+    color: "firebrick",
+    whiskerLength: 20,
     name: "오차범위 ",
     toolTipContent: "<b>{name}:</b> {y[0]} - {y[1]}cm",
     dataPoints: [
@@ -338,6 +353,7 @@ chart4.render();
 // 신체구성 그래프
 let chart5 = new CanvasJS.Chart("protein", {
 	animationEnabled: true,
+  theme: "light2",
 	title:{
 		text: "태권도 수련 시 단백질 변화"
 	},
@@ -363,6 +379,8 @@ let chart5 = new CanvasJS.Chart("protein", {
 		},
 		{
 			type: "error",
+      color: "firebrick",
+      whiskerLength: 0,
 			name: "오차범위",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} kg - {y[1]} kg",
 			dataPoints: [
@@ -383,6 +401,7 @@ let chart5 = new CanvasJS.Chart("protein", {
 		},
 		{
 			type: "error",
+      whiskerLength: 0,
 			name: "오차범위",
       color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} kg - {y[1]} kg",
@@ -396,6 +415,7 @@ chart5.render();
 
 let chart6 = new CanvasJS.Chart("chegi", {
 	animationEnabled: true,
+  theme: "light2",
 	title:{
 		text: "체지방율 변화"
 	},
@@ -421,6 +441,8 @@ let chart6 = new CanvasJS.Chart("chegi", {
 		},
 		{
 			type: "error",
+      color: "firebrick",
+      whiskerLength: 0,
 			name: "오차범위",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} % - {y[1]} %",
 			dataPoints: [
@@ -441,6 +463,7 @@ let chart6 = new CanvasJS.Chart("chegi", {
 		},
 		{
 			type: "error",
+      whiskerLength: 0,
 			name: "오차범위",
       color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} % - {y[1]} %",
@@ -454,6 +477,7 @@ chart6.render();
 
 let chart7 = new CanvasJS.Chart("bokbu", {
 	animationEnabled: true,
+  theme: "light2",
 	title:{
 		text: "복부지방율 변화"
 	},
@@ -479,6 +503,8 @@ let chart7 = new CanvasJS.Chart("bokbu", {
 		},
 		{
 			type: "error",
+      color: "firebrick",
+      whiskerLength: 10,
 			name: "오차범위",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} % - {y[1]} %",
 			dataPoints: [
@@ -499,6 +525,7 @@ let chart7 = new CanvasJS.Chart("bokbu", {
 		},
 		{
 			type: "error",
+      whiskerLength: 10,
 			name: "오차범위",
       color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} % - {y[1]} %",
@@ -512,6 +539,7 @@ chart7.render();
 
 let chart8 = new CanvasJS.Chart("bokbu2", {
 	animationEnabled: true,
+  theme: "light2",
 	title:{
 		text: "복부지방율 변화 (오차범위 제거)"
 	},
@@ -528,6 +556,7 @@ let chart8 = new CanvasJS.Chart("bokbu2", {
 	data: [{
 		type: "line",
 			name: "실험군",
+      color: "firebrick",
 			toolTipContent: "<b>{label}</b><br><span style=\"color:#4F81BC\">{name}</span>: {y} %",
 			markerType: "none",
 			dataPoints: [
@@ -552,6 +581,7 @@ chart8.render();
 // 폐기능 그래프
 let chart9 = new CanvasJS.Chart("fvc", {
 	animationEnabled: true,
+  theme: "light2",
 	title:{
 		text: "FVC (노력성 폐활량)"
 	},
@@ -577,6 +607,8 @@ let chart9 = new CanvasJS.Chart("fvc", {
 		},
 		{
 			type: "error",
+      color: "firebrick",
+      whiskerLength: 0,
 			name: "오차범위",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} L - {y[1]} L",
 			dataPoints: [
@@ -597,6 +629,7 @@ let chart9 = new CanvasJS.Chart("fvc", {
 		},
 		{
 			type: "error",
+      whiskerLength: 0,
 			name: "오차범위",
       color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} L - {y[1]} L",
@@ -610,6 +643,7 @@ chart9.render();
 
 let chart10 = new CanvasJS.Chart("vc", {
 	animationEnabled: true,
+  theme: "light2",
 	title:{
 		text: "VC (폐활량)"
 	},
@@ -635,6 +669,8 @@ let chart10 = new CanvasJS.Chart("vc", {
 		},
 		{
 			type: "error",
+      color: "firebrick",
+      whiskerLength: 0,
 			name: "오차범위",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} L - {y[1]} L",
 			dataPoints: [
@@ -655,6 +691,7 @@ let chart10 = new CanvasJS.Chart("vc", {
 		},
 		{
 			type: "error",
+      whiskerLength: 0,
 			name: "오차범위",
       color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} L - {y[1]} L",
@@ -668,6 +705,7 @@ chart10.render();
 
 let chart11 = new CanvasJS.Chart("erv", {
 	animationEnabled: true,
+  theme: "light2",
 	title:{
 		text: "ERV (호기 예비량)"
 	},
@@ -693,6 +731,8 @@ let chart11 = new CanvasJS.Chart("erv", {
 		},
 		{
 			type: "error",
+      color: "firebrick",
+      whiskerLength: 0,
 			name: "오차범위",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} L - {y[1]} L",
 			dataPoints: [
@@ -713,6 +753,7 @@ let chart11 = new CanvasJS.Chart("erv", {
 		},
 		{
 			type: "error",
+      whiskerLength: 0,
 			name: "오차범위",
       color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} L - {y[1]} L",
@@ -726,6 +767,7 @@ chart11.render();
 
 let chart12 = new CanvasJS.Chart("mvv", {
 	animationEnabled: true,
+  theme: "light2",
 	title:{
 		text: "MVV (최대 노력 환기량)"
 	},
@@ -751,6 +793,8 @@ let chart12 = new CanvasJS.Chart("mvv", {
 		},
 		{
 			type: "error",
+      color: "firebrick",
+      whiskerLength: 0,
 			name: "오차범위",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} L/ml - {y[1]} L/ml",
 			dataPoints: [
@@ -771,6 +815,7 @@ let chart12 = new CanvasJS.Chart("mvv", {
 		},
 		{
 			type: "error",
+      whiskerLength: 0,
 			name: "오차범위",
       color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} L/ml - {y[1]} L/ml",
@@ -785,6 +830,7 @@ chart12.render();
 // 혈액성분 그래프
 let chart13 = new CanvasJS.Chart("tc", {
 	animationEnabled: true,
+  theme: "light2",
 	title:{
 		text: "TC (총 콜레스테롤)"
 	},
@@ -810,6 +856,8 @@ let chart13 = new CanvasJS.Chart("tc", {
 		},
 		{
 			type: "error",
+      color: "firebrick",
+      whiskerLength: 0,
 			name: "오차범위",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} mg/dl - {y[1]} mg/dl",
 			dataPoints: [
@@ -830,6 +878,7 @@ let chart13 = new CanvasJS.Chart("tc", {
 		},
 		{
 			type: "error",
+      whiskerLength: 0,
 			name: "오차범위",
       color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} mg/dl - {y[1]} mg/dl",
@@ -843,6 +892,7 @@ chart13.render();
 
 let chart14 = new CanvasJS.Chart("tg", {
 	animationEnabled: true,
+  theme: "light2",
 	title:{
 		text: "TG (중성지방)"
 	},
@@ -868,6 +918,8 @@ let chart14 = new CanvasJS.Chart("tg", {
 		},
 		{
 			type: "error",
+      color: "firebrick",
+      whiskerLength: 0,
 			name: "오차범위",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} mg/dl - {y[1]} mg/dl",
 			dataPoints: [
@@ -888,6 +940,7 @@ let chart14 = new CanvasJS.Chart("tg", {
 		},
 		{
 			type: "error",
+      whiskerLength: 0,
 			name: "오차범위",
       color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} mg/dl - {y[1]} mg/dl",
@@ -901,6 +954,7 @@ chart14.render();
 
 let chart15 = new CanvasJS.Chart("crea", {
 	animationEnabled: true,
+  theme: "light2",
 	title:{
 		text: "크레아티닌"
 	},
@@ -926,6 +980,8 @@ let chart15 = new CanvasJS.Chart("crea", {
 		},
 		{
 			type: "error",
+      color: "firebrick",
+      whiskerLength: 0,
 			name: "오차범위",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} mg/dl - {y[1]} mg/dl",
 			dataPoints: [
@@ -946,6 +1002,7 @@ let chart15 = new CanvasJS.Chart("crea", {
 		},
 		{
 			type: "error",
+      whiskerLength: 0,
 			name: "오차범위",
       color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} mg/dl - {y[1]} mg/dl",
@@ -959,6 +1016,7 @@ chart15.render();
 
 let chart16 = new CanvasJS.Chart("hdl", {
 	animationEnabled: true,
+  theme: "light2",
 	title:{
 		text: "HDL-C (고밀도 콜레스테롤)"
 	},
@@ -984,6 +1042,8 @@ let chart16 = new CanvasJS.Chart("hdl", {
 		},
 		{
 			type: "error",
+      color: "firebrick",
+      whiskerLength: 0,
 			name: "오차범위",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} mg/dl - {y[1]} mg/dl",
 			dataPoints: [
@@ -1004,6 +1064,7 @@ let chart16 = new CanvasJS.Chart("hdl", {
 		},
 		{
 			type: "error",
+      whiskerLength: 0,
 			name: "오차범위",
       color:"#a9a9a9",
 			toolTipContent: "<span style=\"color:#C0504E\">{name}</span>: {y[0]} mg/dl - {y[1]} mg/dl",
