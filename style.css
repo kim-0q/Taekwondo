@@ -12,17 +12,30 @@ ul li{
 nav{
   width: 100%;
   position: fixed;
-  background: #A3C6C4;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1;
 }
 
+.navbar--dark
+{
+  background-color: #A3C6C4;
+  transition: 0.15s ease-in-out;
+}
+
 #navbar__logo{
   font-size: 25px;
   margin-left: 25px;
   color: rgb(235,235,235);
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+#navbar__logo:hover{
+  color: #354649;
+  transition: 0.1s ease-in-out;
 }
 
 .menu{
@@ -149,6 +162,7 @@ section{
 #abstract__desc{
   padding-left: 40px;
   text-align: left;
+  
 }
 
 #abstract__plus{
@@ -190,6 +204,7 @@ section{
   margin-right: 5%;
   background-color: #F7F1F0;
   line-height: 30px;
+  font-size: 16px;
 }
 
 #goal__photo{
@@ -294,6 +309,10 @@ section{
   margin-bottom: 10px;
 }
 
+.reason__desc{
+  text-align: justify;
+}
+
 /* 컨테이너 width 320 height 400 */
 
 #Intro__Problem{
@@ -328,10 +347,11 @@ section{
 }
 
 .problem__text{
-  padding-top: 20px;
   background-color: #F7F1F0;
   height: 82%;
+  padding-top: 10px;
   padding-left: 20px;
+  line-height: 30px;
 }
 
 .problem__text__container{
@@ -528,7 +548,7 @@ section{
   display: inline-block;
   position: absolute;
   width: 670px;
-  top: 150px;
+  top: 160px;
   left: 470px;
   background-color: #F7F1F0;
 }
@@ -550,9 +570,10 @@ section{
   background-color: #F7F1F0;
   line-height: 30px;
   padding: 25px;
-  top: 790px;
+  top: 780px;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 15px;
 }
 
 #Body__Bone__Physical{
@@ -570,11 +591,11 @@ section{
   background-color: #DBC1AD;
   border-radius: 15px;
   padding: 20px;
-  text-align: center;
+  text-align: justify;
   width: 90%;
   margin: 0 auto;
   margin-bottom: 2%;
-  line-height: 25px;
+  line-height: 28px;
 }
 
 #bone__container{
@@ -649,6 +670,7 @@ section{
 
 #protein__text{
   margin: 30px 0;
+  text-align: justify;
 }
 
 #const__graph2{
@@ -658,6 +680,7 @@ section{
 
 #bokbu__text{
   margin: 20px 0;
+  text-align: justify;
 }
 
 .const__graph{
@@ -726,7 +749,7 @@ section{
 }
 
 #blood__intro{
-  width: 100%;
+  width: 85%;
   margin: 0 auto;
   background-color: #F7F1F0;
   padding: 30px 0;
@@ -739,7 +762,7 @@ section{
 
 #blood__intro__cate{
   line-height: 25px;
-  padding-left: 3%;
+  padding-left: 5%;
 }
 
 #blood__graph__container{

@@ -1,3 +1,68 @@
+const navbar=document.querySelector('#navbar');
+const navbarHeight=navbar.getBoundingClientRect().height;
+document.addEventListener('scroll', ()=>{
+  if (window.scrollY>=navbarHeight) {
+    navbar.classList.add('navbar--dark');
+  }else{
+    navbar.classList.remove('navbar--dark');
+  }
+});
+
+function scrolltot(a,b)
+{
+  a.addEventListener('click',()=>{
+    window.scrollTo(b.offsetLeft,b.offsetTop);
+  })
+}
+
+let a=document.querySelector('#navbar__logo');
+let b=document.querySelector('#Home');
+scrolltot(a,b);
+
+let c=document.querySelector('#home');
+let d=document.querySelector('#Home');
+scrolltot(c,d);
+
+let e=document.querySelector('#abstract');
+let f=document.querySelector('#Abstract');
+scrolltot(e,f);
+
+let g=document.querySelector('#goal');
+let h=document.querySelector('#Intro__Goal');
+scrolltot(g,h);
+
+let i=document.querySelector('#reason');
+let j=document.querySelector('#Intro__Reason');
+scrolltot(i,j);
+
+let k=document.querySelector('#problem');
+let l=document.querySelector('#Intro__Problem');
+scrolltot(k,l);
+
+let m=document.querySelector('#muscle');
+let n=document.querySelector('#Body__Muscle__backkick');
+scrolltot(m,n);
+
+let o=document.querySelector('#bone');
+let p=document.querySelector('#Body__Bone__Physical');
+scrolltot(o,p);
+
+let q=document.querySelector('#body');
+let r=document.querySelector('#Body__Construct');
+scrolltot(q,r);
+
+let s=document.querySelector('#blood');
+let t=document.querySelector('#Body__Blood');
+scrolltot(s,t);
+
+let u=document.querySelector('#result');
+let v=document.querySelector('#Con__Result');
+scrolltot(u,v);
+
+let w=document.querySelector('#reff');
+let x=document.querySelector('#Con__Ref');
+scrolltot(w,x);
+
 const ctx=document.getElementById('mychart');
 const btx=document.getElementById('mybarchart');
 const ptx=document.getElementById("pieChart");

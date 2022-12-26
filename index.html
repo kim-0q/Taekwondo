@@ -26,30 +26,30 @@
       </div>
       <div id="menubar" class="menu">
         <ul class="menu">
-          <li class="menuitem">Home</li>
-          <li class="menuitem">초록</li>
+          <li class="menuitem" id="home">Home</li>
+          <li class="menuitem" id="abstract">초록</li>
           <li class="menuitem">
             서론 ∨
             <ul class="sidemenu">
-              <li>분석 목적</li>
-              <li>주제선정 이유</li>
-              <li>문제 인식</li>
+              <li id="goal">분석 목적</li>
+              <li id="reason">주제선정 이유</li>
+              <li id="problem">문제 인식</li>
             </ul>
           </li>
           <li class="menuitem">
             본론 ∨
             <ul class="sidemenu">
-              <li>근 활성도</li>
-              <li>골밀도, 신체능력</li>
-              <li>신체구성, 폐기능</li>
-              <li>혈액성분</li>
+              <li id="muscle">근 활성도</li>
+              <li id="bone">골밀도, 신체능력</li>
+              <li id="body">신체구성, 폐기능</li>
+              <li id="blood">혈액성분</li>
             </ul>
           </li>
           <li class="menuitem">
             결론 ∨
             <ul class="sidemenu">
-              <li>분석결과 & 제언</li>
-              <li>참고문헌</li>
+              <li id="result">분석결과 & 제언</li>
+              <li id="reff">참고문헌</li>
             </ul>
           </li>
         </ul>
@@ -96,13 +96,15 @@
             분석으로 나타난 주요 결과는 다음과 같다.
           </p>
           <ol class="abstract__list">
-            <li>뒤차기와 뒤후리기 동작 시 최소 8개의 근육이 활성화 됐다.</li>
-            <li>체지방 및 복부지방율이 감소했다.</li>
-            <li>최대 노력 환기량을 제외한 폐기능이 향상되었다.</li>
-            <li>
-              총 콜레스테롤이 감소하고 고밀도 콜레스테롤이 상승했으며<br />
-              중성지방이 감소했다.
-            </li>
+            <b>
+              <li>뒤차기와 뒤후리기 동작 시 최소 8개의 근육이 활성화 됐다.</li>
+              <li>체지방 및 복부지방율이 감소했다.</li>
+              <li>최대 노력 환기량을 제외한 폐기능이 향상되었다.</li>
+              <li>
+                총 콜레스테롤이 감소하고 고밀도 콜레스테롤이 상승했으며<br />
+                중성지방이 감소했다.
+              </li></b
+            >
           </ol>
 
           <p>
@@ -143,7 +145,7 @@
       <div id="reason__title"><h1>주제선정 이유</h1></div>
       <div class="reason__containers">
         <div class="reason__container">
-          <div class="reason__subtitle"><2020년 전국 태권도장 수></div>
+          <div class="reason__subtitle"><b><2020년 전국 태권도장 수></b></div>
           <div id="canvas">
             <div id="south"></div>
             <div id="seoul"><h2>서울특별시: 1348</h2></div>
@@ -166,12 +168,12 @@
           </div>
           <div class="reason__desc">
             국기원에서 2020년 12월 6일 기준 전국 행정구별 태권도장 수 데이터를
-            가져와 시각화했다. 위 자료에서 알 수 있듯 전국에 약 1만여개에 이르는
-            태권도장이 분포해 접근성이 매우 높다는 특징이 있다.
+            가져왔다. 자료에서 알 수 있듯 전국에 약 1만여개에 이르는 태권도장이
+            분포해 접근성이 매우 높다는 특징이 있다.
           </div>
         </div>
         <div class="reason__container line">
-          <div class="reason__subtitle"><높은 접근성></div>
+          <div class="reason__subtitle"><b><높은 접근성></b></div>
           <div class="reason__graph">
             <canvas id="mychart" height="220px"></canvas>
           </div>
@@ -182,7 +184,7 @@
           </div>
         </div>
         <div class="reason__container bar">
-          <div class="reason__subtitle"><높은 대중성></div>
+          <div class="reason__subtitle"><b><높은 대중성></b></div>
           <div class="reason__graph">
             <canvas id="mybarchart" height="220px"></canvas>
           </div>
@@ -232,10 +234,10 @@
                 유년기 시절부터 시작된 태권도 수련은 대부분 청소년기를 거치면서
                 중단되는데, <br />
                 이는 학업과 관련된 이유가 주된 원인이다. 그러나 성인이 되어서도
+                중단은 지속되는데,
                 <br />
-                중단은 지속되는데, 이는 성인들에게 태권도장은 어린이들을 위한
-                <br />
-                체육활동이라는 인식이 작용하는 것으로 나타났다.
+                이는 성인들에게 태권도장은 어린이들을 위한 체육활동이라는 인식이
+                작용하는 것으로 나타났다.
               </p>
               <p>
                 정리하면 성인에게 태권도는 단지 어린이 놀이란 생각에 참여하기를
@@ -317,14 +319,14 @@
         <div id="backhook__graph__container">
           <canvas id="mixed-chart" width="670" height="350"></canvas>
           <div id="backhook__graph__text">
-            뒤후리기 구분 동작별 상체 근전도를 비교해 보았다. 3phase (몸을
-            회전해 타격하기 직전까지의 동작) 를 제외한 나머지 구간에서 모두
-            기립근이 우세한 활성도를 보인다. 이는 몸통 회전시 상체의 균형
-            잡기위해 쓰이는 것으로 해석된다. 복직근과 외복사근 또한 몸통의
-            코어를 잡아주는 역할로 해석된다. 뒤 하체 근전도에서는 비복근이 높게
-            나왔는데, 이는 뒤후리기 특성 상 몸을 회전시켜 발로 물체를 후려치는
-            동작이기 때문에 발등을 편 상태에서 가격한다. 따라서 비복근이
-            수축되면서 발등을 펴주는 역할을 해 높게 나타난 것으로 보인다.
+            3phase (몸을 회전해 타격하기 직전까지의 동작) 를 제외한 나머지
+            구간에서 모두 기립근이 우세한 활성도를 보인다. 이는 몸통 회전시
+            상체의 균형 잡기위해 쓰이는 것으로 해석된다. 복직근과 외복사근 또한
+            몸통의 코어를 잡아주는 역할로 해석된다. 하체 근전도에서는 비복근이
+            높게 나왔는데, 이는 뒤후리기 특성 상 몸을 회전시켜 발로 물체를
+            후려치는 동작이기 때문에 발등을 편 상태에서 가격한다. 따라서
+            비복근이 수축되면서 발등을 펴주는 역할을 해 높게 나타난 것으로
+            보인다.
           </div>
         </div>
         <div id="kick__con">
@@ -345,9 +347,8 @@
           이상 태권도 운동에 참여하는 집단과 그렇지 않은 집단을 비교하여 골밀도
           수치와 신체능력을 평가했다. 신체능력은 악력, 윗몸일으키기, 전신반응,
           그리고 제자리 높이뛰기 총 4가지 항목으로 평가했다. 통계적으로 유의한
-          기준을 P<0.05 로 삼았다. 여기서 P는 조건의 차이에 따른 그룹 간 차이가
-          발생한 확률을 의미한다. 즉, P값이 0.05이면 조건의 차이로 그룹 간
-          차이가 발생했을 확률이 95%라는 뜻이 된다.
+          기준을 P<0.05 (조건의 차이로 그룹 간 차이가 발생했을 확률이 95% 미만)
+          로 잡았다.
         </p>
       </div>
       <div id="bone__container">
@@ -368,12 +369,11 @@
             <div class="bone__graph" id="jump"></div>
           </div>
           <div class="bone__text2">
-            이번엔 신체능력을 평가한 데이터를 시각화 해보자. 위와 같이 4개의
-            신체능력 항목 모두 제어군보다 향상된 수치를 보였으며, P값 또한 0에
-            수렴하는 수치를 기록했다. 이는 태권도 운동의 공격과 방어의 빠른
-            전환, 그리고 자세의 변화 중 중심을 유지하기 위해 하체의 힘을
-            사용함으로써 하지의 비복근 및 대퇴근의 발달이 이루어져 제자리 높이
-            뛰기에서 높은 수준을 유지하고 있다고 할 수 있다.
+            위와 같이 4개의 신체능력 항목 모두 제어군보다 향상된 수치를
+            보였으며, P값 또한 0에 수렴하는 수치를 기록했다. 이는 태권도 운동의
+            공격과 방어의 빠른 전환, 그리고 자세의 변화 중 중심을 유지하기 위해
+            하체의 힘을 사용함으로써 하지의 비복근 및 대퇴근의 발달이 이루어져
+            제자리 높이 뛰기에서 높은 수준을 유지하고 있다고 할 수 있다.
           </div>
         </div>
       </div>
@@ -420,20 +420,20 @@
         </p>
         <ul id="lung__category">
           <li>
-            FVC (forced vital capacity, 노력성 폐활량) : 최대로 숨을 들이쉰
-            다음, 최대 노력으로 끝까지 내쉬었을 때 공기량
+            <b>FVC (forced vital capacity, 노력성 폐활량) : </b>
+            최대로 숨을 들이쉰 다음, 최대 노력으로 끝까지 내쉬었을 때 공기량
           </li>
           <li>
-            VC (vital capacity, 폐활량): 최대로 숨을 들이마신 상태에서 최대로
-            내쉬는 공기의 부피
+            <b> VC (vital capacity, 폐활량):</b> 최대로 숨을 들이마신 상태에서
+            최대로 내쉬는 공기의 부피
           </li>
           <li>
-            ERV (expiratory reserve volume, 호기 예비량): 평소처럼 숨을 내쉰
-            뒤에 힘을 더 주어 최대로 더 내쉴 수 있는 공기의 양
+            <b>ERV (expiratory reserve volume, 호기 예비량): </b> 평소처럼 숨을
+            내쉰 뒤에 힘을 더 주어 최대로 더 내쉴 수 있는 공기의 양
           </li>
           <li>
-            MVV (maximum voluntary ventilation, 최대노력환기량): 최대로 노력하여
-            호흡할 수 있는 공기의 양
+            <b>MVV (maximum voluntary ventilation, 최대노력환기량): </b>
+            최대로 노력하여 호흡할 수 있는 공기의 양
           </li>
         </ul>
       </div>
@@ -459,10 +459,10 @@
           마지막으로 혈액성분 변화에 대해 분석해보겠다. 관련 용어는 다음과 같다.
         </p>
         <ul id="blood__intro__cate">
-          <li>TC (Total Cholesterol): 총 콜레스테롤</li>
-          <li>TG (Triglyceride): 중성지방</li>
-          <li>Creatinine: 크레아티닌 (근육 물질인 크레아틴의 무수물)</li>
-          <li>HDL-C: 고밀도 콜레스테롤 (이로운 콜레스테롤)</li>
+          <li><b>TC (Total Cholesterol):</b> 총 콜레스테롤</li>
+          <li><b>TG (Triglyceride):</b> 중성지방</li>
+          <li><b>Creatinine:</b> 크레아티닌 (근육 물질인 크레아틴의 무수물)</li>
+          <li><b>HDL-C:</b> 고밀도 콜레스테롤 (이로운 콜레스테롤)</li>
         </ul>
       </div>
       <div id="blood__graph__container">
